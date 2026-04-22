@@ -32,11 +32,10 @@ window.addEventListener("scroll", () => {
 const revealElements = document.querySelectorAll(".reveal, .fade-up, .fade-in");
 
 const revealOnScroll = () => {
-  const triggerBottom = window.innerHeight * 0.85;
+  const triggerBottom = window.innerHeight * 0.88;
 
   revealElements.forEach((el) => {
     const elementTop = el.getBoundingClientRect().top;
-
     if (elementTop < triggerBottom) {
       el.classList.add("active");
     }
@@ -46,7 +45,6 @@ const revealOnScroll = () => {
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
-
 /* ===============================
    LOAD MILESTONES FROM JSON
 ================================ */
@@ -54,7 +52,6 @@ fetch("data/milestones.json")
   .then((res) => res.json())
   .then((data) => {
     const container = document.getElementById("milestonesAccordion");
-    if (!container) return;
 
     data.forEach((item) => {
       const div = document.createElement("div");
@@ -63,15 +60,14 @@ fetch("data/milestones.json")
       div.innerHTML = `
         <div class="accordion-header">
           <div class="accordion-title-wrap">
-            <div class="accordion-title">${item.title}</div>
+            <span class="accordion-title">${item.title}</span>
             <div class="accordion-meta">
-              <span class="accordion-chip">${item.date}</span>
-              <span class="accordion-chip">${item.marks}</span>
+              <span class="accordion-chip">📅 ${item.date}</span>
+              <span class="accordion-chip">🎯 ${item.marks}</span>
             </div>
           </div>
           <span class="accordion-icon">+</span>
         </div>
-
         <div class="accordion-body">
           <div class="accordion-content">
             <p>${item.description}</p>
@@ -79,7 +75,7 @@ fetch("data/milestones.json")
               ${item.links
                 .map(
                   (link) =>
-                    `<a href="${link.url}" target="_blank" class="btn btn-small btn-outline">${link.label}</a>`
+                    `<a href="${link.url}" target="_blank" class="btn btn-small btn-outline">${link.label}</a>`,
                 )
                 .join("")}
             </div>
@@ -89,7 +85,8 @@ fetch("data/milestones.json")
 
       container.appendChild(div);
     });
-  });
+  })
+  .catch((err) => console.error("Failed to load milestones:", err));
 
 /* ===============================
    LOAD DOWNLOADS FROM JSON
@@ -102,26 +99,39 @@ fetch("data/downloads.json")
     const markGrid = document.getElementById("markingGrid");
 
     data.documents.forEach((item) => {
-      docGrid.innerHTML += createDownloadCard(item);
+      docGrid.innerHTML += createDownloadCard(item, "📄");
     });
 
     data.presentations.forEach((item) => {
-      presGrid.innerHTML += createDownloadCard(item);
+      presGrid.innerHTML += createDownloadCard(item, "📊");
     });
 
     data.marking.forEach((item) => {
-      markGrid.innerHTML += createDownloadCard(item);
+      markGrid.innerHTML += createDownloadCard(item, "📋");
     });
-  });
+  })
+  .catch((err) => console.error("Failed to load downloads:", err));
 
-function createDownloadCard(item) {
+function createDownloadCard(item, icon = "📄") {
+  const linksHTML = item.links
+    .map((link) => {
+      if (link.url === "COMING_SOON") {
+        return `<span class="btn btn-small btn-outline" style="opacity:0.5;cursor:not-allowed;">Coming Soon</span>`;
+      }
+      return `<a href="${link.url}" target="_blank" class="btn btn-small btn-primary">${link.label}</a>`;
+    })
+    .join("");
+
   return `
     <div class="glass-card download-card">
-      <h3>${item.title}</h3>
+      <div class="download-top">
+        <div class="download-icon">${icon}</div>
+        <h3>${item.title}</h3>
+      </div>
       <p>${item.description}</p>
-      <a href="${item.link}" target="_blank" class="btn btn-primary btn-small">
-        Open
-      </a>
+      <div class="download-actions">
+        ${linksHTML}
+      </div>
     </div>
   `;
 }
@@ -134,44 +144,78 @@ fetch("data/team.json")
   .then((data) => {
     const container = document.getElementById("teamGrid");
 
+    if (!container) {
+      console.error("teamGrid element not found");
+      return;
+    }
+
+    container.innerHTML = ""; // clear any placeholder content
+
     data.forEach((member) => {
-      container.innerHTML += `
-        <div class="person-card glass-card">
-          <img src="${member.image}" alt="${member.name}">
-          <h3>${member.name}</h3>
-          <p>${member.id}</p>
-          <p class="role">${member.role}</p>
-        </div>
-      `;
+      const card = document.createElement("div");
+
+      card.classList.add("team-card");
+
+      card.innerHTML = `
+  <div class="team-image">
+    <img src="${member.image}" alt="${member.name}" 
+         onerror="this.src='images/team/placeholder.jpg'" />
+  </div>
+
+  <div class="team-content">
+    <h3>${member.name}</h3>
+
+    <span class="team-role">${member.role}</span>
+
+    <p><strong>Undergraduate</strong><br>
+    Sri Lanka Institute of Information Technology</p>
+
+    <p><strong>Department</strong><br>
+    Software Engineering</p>
+  </div>
+
+  <div class="team-footer">
+    <a href="${member.linkedin || "#"}" target="_blank">LinkedIn</a>
+    <a href="mailto:${member.email || ""}">E-Mail</a>
+  </div>
+`;
+
+      container.appendChild(card);
     });
-  });
+  })
+  .catch((err) => console.error("Failed to load team:", err));
 
-
-  /* ===============================
-   SYSTEM OVERVIEW IMAGE SWITCHER
+/* ===============================
+   OVERVIEW SWITCHER
 ================================ */
-const overviewThumbs = document.querySelectorAll(".overview-thumb");
-const overviewMainImage = document.getElementById("overviewMainImage");
-const overviewTitle = document.getElementById("overviewTitle");
-const overviewBadge = document.getElementById("overviewBadge");
-const overviewDescription = document.getElementById("overviewDescription");
+const thumbs = document.querySelectorAll(".overview-thumb");
+const mainImage = document.getElementById("overviewMainImage");
+const mainTitle = document.getElementById("overviewTitle");
+const mainBadge = document.getElementById("overviewBadge");
+const mainDesc = document.getElementById("overviewDescription");
 
-overviewThumbs.forEach((thumb) => {
+thumbs.forEach((thumb) => {
   thumb.addEventListener("click", () => {
-    overviewThumbs.forEach((item) => item.classList.remove("active"));
+    // Remove active from all
+    thumbs.forEach((t) => t.classList.remove("active"));
     thumb.classList.add("active");
 
-    const newBadge = thumb.getAttribute("data-badge");
-    const newTitle = thumb.getAttribute("data-title");
-    const newImage = thumb.getAttribute("data-image");
-    const newDescription = thumb.getAttribute("data-description");
-
-    if (overviewBadge) overviewBadge.textContent = newBadge;
-    if (overviewTitle) overviewTitle.textContent = newTitle;
-    if (overviewMainImage) {
-      overviewMainImage.src = newImage;
-      overviewMainImage.alt = newTitle;
+    // Fade out
+    if (mainImage) {
+      mainImage.style.opacity = "0";
+      mainImage.style.transform = "scale(0.98)";
     }
-    if (overviewDescription) overviewDescription.textContent = newDescription;
+
+    setTimeout(() => {
+      if (mainImage) {
+        mainImage.src = thumb.dataset.image;
+        mainImage.alt = thumb.dataset.badge;
+        mainImage.style.opacity = "1";
+        mainImage.style.transform = "scale(1)";
+      }
+      if (mainTitle) mainTitle.textContent = thumb.dataset.title;
+      if (mainBadge) mainBadge.textContent = thumb.dataset.badge;
+      if (mainDesc) mainDesc.textContent = thumb.dataset.description;
+    }, 280);
   });
 });

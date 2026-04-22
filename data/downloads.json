@@ -3,37 +3,90 @@
     {
       "title": "Project Proposal",
       "description": "Initial research proposal document outlining objectives and methodology.",
-      "link": "https://drive.google.com/file/d/1mKr5eKI2KHC6aNhi7Argit8m9TwGNuvg/view?usp=sharing"
+      "links": [
+        {
+          "label": "Report (PDF)",
+          "url": "https://drive.google.com/file/d/1mKr5eKI2KHC6aNhi7Argit8m9TwGNuvg/view?usp=sharing"
+        },
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1VVIWQNqEkteTcQEv8NTPHDs63G6PQAny/edit?usp=sharing&ouid=105835760199156672688&rtpof=true&sd=true"
+        }
+      ]
     },
+
     {
       "title": "Project Charter",
       "description": "Defines project scope, objectives, stakeholders, and planning structure.",
-      "link": "https://drive.google.com/file/d/1Q81AJ7NDzSHqif79rshFUjPpBxIgCt8H/view?usp=drive_link"
+      "links": [
+        {
+          "label": "View Document",
+          "url": "https://drive.google.com/file/d/1Q81AJ7NDzSHqif79rshFUjPpBxIgCt8H/view?usp=drive_link"
+        }
+      ]
     },
+
     {
       "title": "Research Project Details",
       "description": "Contains project tracking data, task allocation, and management details.",
-      "link": "https://docs.google.com/spreadsheets/d/12odQ2mpg7RyzDd-4Nyb6DNpi3K1tlz9x/edit?usp=drive_link&ouid=105835760199156672688&rtpof=true&sd=true"
+      "links": [
+        {
+          "label": "Open Sheet",
+          "url": "https://docs.google.com/spreadsheets/d/12odQ2mpg7RyzDd-4Nyb6DNpi3K1tlz9x/edit?usp=drive_link&ouid=105835760199156672688&rtpof=true&sd=true"
+        }
+      ]
     },
+
     {
       "title": "Individual Proposal Reports",
       "description": "Includes individual research contributions from each group member.",
-      "link": "https://drive.google.com/drive/folders/1Rn0QyxssmgdaoabSx9WZ0Lo1_llU6bTb?usp=drive_link"
+      "links": [
+        {
+          "label": "Open Folder",
+          "url": "https://drive.google.com/drive/folders/1Rn0QyxssmgdaoabSx9WZ0Lo1_llU6bTb?usp=drive_link"
+        }
+      ]
     },
+
     {
       "title": "Progress Presentation I Report",
       "description": "Documentation submitted for the first progress evaluation.",
-      "link": "https://drive.google.com/file/d/1sLSqfaoY7WP30qTyD5zNC_FghYcj5sNi/view?usp=drive_linkF"
+      "links": [
+        {
+          "label": "Report (PDF)",
+          "url": "https://drive.google.com/file/d/1sLSqfaoY7WP30qTyD5zNC_FghYcj5sNi/view?usp=drive_linkF"
+        },
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1XTlQX9xtGnVHA2rxutSbKRPFaIymB_UL/edit?usp=drive_link&ouid=105835760199156672688&rtpof=true&sd=true"
+        }
+      ]
     },
+
     {
       "title": "Progress Presentation II Report",
       "description": "Documentation submitted for the second progress evaluation.",
-      "link": "https://drive.google.com/file/d/1QOG6Z9j71MMyBqY4jMD7Er6WBrhtVy6h/view?usp=drive_link"
+      "links": [
+        {
+          "label": "Report (PDF)",
+          "url": "https://drive.google.com/file/d/1QOG6Z9j71MMyBqY4jMD7Er6WBrhtVy6h/view?usp=drive_link"
+        },
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1zOpDAVLEDz10gF-Ze5EQY9kQlt2L1jVa/edit?usp=drive_link&ouid=105835760199156672688&rtpof=true&sd=true"
+        }
+      ]
     },
+
     {
       "title": "Final Report",
       "description": "Complete research documentation including system design, implementation, and evaluation.",
-      "link": "COMING_SOON"
+      "links": [
+        {
+          "label": "Coming Soon",
+          "url": "COMING_SOON"
+        }
+      ]
     }
   ],
 
@@ -41,56 +94,105 @@
     {
       "title": "Project Proposal Slides",
       "description": "Slides used for the initial project proposal presentation.",
-      "link": "https://docs.google.com/presentation/d/1VVIWQNqEkteTcQEv8NTPHDs63G6PQAny/edit?usp=sharing&ouid=105835760199156672688&rtpof=true&sd=true"
+      "links": [
+        {
+          "label": "View Slides",
+          "url": "https://docs.google.com/presentation/d/1VVIWQNqEkteTcQEv8NTPHDs63G6PQAny/edit?usp=sharing&ouid=105835760199156672688&rtpof=true&sd=true"
+        }
+      ]
     },
     {
       "title": "Progress Presentation I Slides",
       "description": "Slides presented during the first progress evaluation.",
-      "link": "https://docs.google.com/presentation/d/1XTlQX9xtGnVHA2rxutSbKRPFaIymB_UL/edit?usp=drive_link&ouid=105835760199156672688&rtpof=true&sd=true"
+      "links": [
+        {
+          "label": "View Slides",
+          "url": "https://docs.google.com/presentation/d/1XTlQX9xtGnVHA2rxutSbKRPFaIymB_UL/edit?usp=drive_link&ouid=105835760199156672688&rtpof=true&sd=true"
+        }
+      ]
     },
     {
       "title": "Progress Presentation II Slides",
       "description": "Slides presented during the second progress evaluation.",
-      "link": "https://docs.google.com/presentation/d/1zOpDAVLEDz10gF-Ze5EQY9kQlt2L1jVa/edit?usp=drive_link&ouid=105835760199156672688&rtpof=true&sd=true"
+      "links": [
+        {
+          "label": "View Slides",
+          "url": "https://docs.google.com/presentation/d/1zOpDAVLEDz10gF-Ze5EQY9kQlt2L1jVa/edit?usp=drive_link&ouid=105835760199156672688&rtpof=true&sd=true"
+        }
+      ]
     },
     {
       "title": "Final Presentation Slides",
       "description": "Final project demonstration slides.",
-      "link": "COMING_SOON"
+      "links": [
+        {
+          "label": "Coming Soon",
+          "url": "COMING_SOON"
+        }
+      ]
     }
-    
   ],
 
   "marking": [
     {
       "title": "Proposal Marking Scheme",
       "description": "Evaluation criteria for the project proposal.",
-      "link": "https://drive.google.com/file/d/1rWP88dRnvvA_ye0bIIhTEtkqfk0tDEAG/view?usp=drive_link"
+      "links": [
+        {
+          "label": "View",
+          "url": "https://drive.google.com/file/d/1rWP88dRnvvA_ye0bIIhTEtkqfk0tDEAG/view?usp=drive_link"
+        }
+      ]
     },
     {
       "title": "Progress Presentation I Marking Scheme",
       "description": "Evaluation criteria for Progress Presentation I.",
-      "link": "https://drive.google.com/file/d/1PAnHLCg9MQ7Cru5ZdHLl74P7yhbco-l2/view?usp=drive_link"
+      "links": [
+        {
+          "label": "View",
+          "url": "https://drive.google.com/file/d/1PAnHLCg9MQ7Cru5ZdHLl74P7yhbco-l2/view?usp=drive_link"
+        }
+      ]
     },
     {
       "title": "Progress Presentation II Marking Scheme",
       "description": "Evaluation criteria for Progress Presentation II.",
-      "link": "https://drive.google.com/file/d/1pk8evv4GgB41Cv_bKLkAusH70ZCftPeK/view?usp=drive_link"
+      "links": [
+        {
+          "label": "View",
+          "url": "https://drive.google.com/file/d/1pk8evv4GgB41Cv_bKLkAusH70ZCftPeK/view?usp=drive_link"
+        }
+      ]
     },
     {
       "title": "Final Presentation Marking Scheme",
       "description": "Evaluation criteria for the final presentation.",
-      "link": "https://drive.google.com/file/d/1w__eybM8dyOpQoQdjXwqZOnr7VMlsdRG/view?usp=drive_link"
+      "links": [
+        {
+          "label": "View",
+          "url": "https://drive.google.com/file/d/1w__eybM8dyOpQoQdjXwqZOnr7VMlsdRG/view?usp=drive_link"
+        }
+      ]
     },
     {
       "title": "Final Report Marking Scheme",
       "description": "Evaluation criteria for the final report.",
-      "link": "https://drive.google.com/file/d/1Po5-tgiCj1MFqPta0HM6IVeLCQZwnffx/view?usp=drive_link"
+      "links": [
+        {
+          "label": "View",
+          "url": "https://drive.google.com/file/d/1Po5-tgiCj1MFqPta0HM6IVeLCQZwnffx/view?usp=drive_link"
+        }
+      ]
     },
     {
       "title": "Viva Marking Scheme",
       "description": "Evaluation criteria for the viva examination.",
-      "link": "https://drive.google.com/file/d/13phaJ16QmX4K6ly5_zq0Hq4K8xCWJQhb/view?usp=drive_link"
+      "links": [
+        {
+          "label": "View",
+          "url": "https://drive.google.com/file/d/13phaJ16QmX4K6ly5_zq0Hq4K8xCWJQhb/view?usp=drive_link"
+        }
+      ]
     }
   ]
 }
