@@ -11,31 +11,27 @@ if (navToggle && navMenu) {
   });
 }
 
-/* ===============================
-   CLOSE MENU ON LINK CLICK
-================================ */
-const navLinks = document.querySelectorAll(".nav-link");
-
-navLinks.forEach((link) => {
+/* Close menu when a link is clicked */
+document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", () => {
-    navMenu.classList.remove("open");
-    navToggle.classList.remove("open");
+    navMenu?.classList.remove("open");
+    navToggle?.classList.remove("open");
   });
 });
 
 /* ===============================
    ACTIVE LINK ON SCROLL
 ================================ */
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-link");
 
 window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
+  /* Active section highlight */
   let current = "";
-
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 100;
-    const sectionHeight = section.offsetHeight;
-
-    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+    if (scrollY >= section.offsetTop - 120) {
       current = section.getAttribute("id");
     }
   });
@@ -46,17 +42,14 @@ window.addEventListener("scroll", () => {
       link.classList.add("active");
     }
   });
-});
 
-/* ===============================
-   NAVBAR SHADOW ON SCROLL
-================================ */
-const header = document.querySelector(".header");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.4)";
-  } else {
-    header.style.boxShadow = "none";
+  /* Elevated shadow when scrolled */
+  const header = document.querySelector(".header");
+  if (header) {
+    if (scrollY > 40) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
   }
 });

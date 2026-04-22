@@ -1,4 +1,16 @@
 /* ===============================
+   NAVBAR SCROLL ELEVATION
+================================ */
+.header {
+  transition:
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+.header.scrolled {
+  box-shadow: 0 4px 24px rgba(13, 31, 60, 0.1);
+}
+
+/* ===============================
    SCROLL REVEAL
 ================================ */
 .reveal,

@@ -25,9 +25,13 @@
 
     <header class="header" id="top">
       <div class="container nav-container">
+        <!-- Updated logo — paste inside .nav-container, replacing the old <a class="logo"> block -->
         <a href="#home" class="logo">
           <img src="images/logo/screenmind-logo.png" alt="ScreenMind Logo" />
-          <span>ScreenMind</span>
+          <div class="logo-text">
+            <span class="logo-name">ScreenMind</span>
+            <span class="logo-tagline">Mental Health AI · SLIIT</span>
+          </div>
         </a>
 
         <nav class="nav" id="navMenu">
@@ -803,13 +807,78 @@
       </section>
     </main>
 
+    <!-- ======== FOOTER ======== -->
     <footer class="footer">
-      <div class="container footer-content">
-        <p>© 2026 ScreenMind. All Rights Reserved.</p>
-        <p>
-          Designed for the AI-Based Mental Health Detection System for
-          Smartphone Addiction.
-        </p>
+      <div class="container">
+
+        <div class="footer-grid">
+
+          <!-- Brand column -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="images/logo/screenmind-logo.png" alt="ScreenMind Logo" />
+              <span class="footer-logo-name">ScreenMind</span>
+            </div>
+            <p class="footer-desc">
+              An AI-based mental health detection system for smartphone addiction,
+              built with digital phenotyping, behavioral analytics, and explainable AI.
+            </p>
+            <div class="footer-badge">
+              <span class="footer-badge-dot"></span>
+              Final Year Research Project · SLIIT 2025/26
+            </div>
+          </div>
+
+          <!-- Project info column -->
+          <div class="footer-col">
+            <p class="footer-col-title">Project Info</p>
+            <ul class="footer-info-list">
+              <li>
+                <span class="footer-info-key">Project ID</span>
+                <span class="footer-info-val">25-26J-254</span>
+              </li>
+              <li>
+                <span class="footer-info-key">Research Area</span>
+                <span class="footer-info-val">Digital Phenotyping & Mental Health AI</span>
+              </li>
+              <li>
+                <span class="footer-info-key">Institution</span>
+                <span class="footer-info-val">SLIIT Faculty of Computing</span>
+              </li>
+              <li>
+                <span class="footer-info-key">Academic Year</span>
+                <span class="footer-info-val">2025 / 2026</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick links column -->
+          <div class="footer-col">
+            <p class="footer-col-title">Quick Links</p>
+            <ul class="footer-nav-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#scope">Project Scope</a></li>
+              <li><a href="#overview">System Overview</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#milestones">Milestones</a></li>
+              <li><a href="#downloads">Downloads</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+          <p class="footer-bottom-left">
+            © 2026 <strong>ScreenMind</strong>. All Rights Reserved.
+          </p>
+          <p class="footer-bottom-right">
+            AI-Based Mental Health Detection System for Smartphone Addiction
+          </p>
+        </div>
+
       </div>
     </footer>
 

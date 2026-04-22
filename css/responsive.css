@@ -93,13 +93,13 @@
 
   .nav {
     position: fixed;
-    top: 76px;
+    top: 66px;
     right: -100%;
     width: 290px;
-    height: calc(100vh - 76px);
-    background: rgba(255, 255, 255, 0.98);
+    height: calc(100vh - 66px);
+    background: rgba(255, 255, 255, 0.99);
     backdrop-filter: blur(14px);
-    padding: 24px;
+    padding: 28px 24px;
     transition: right 0.3s ease;
     border-left: 1px solid var(--border);
     box-shadow: -8px 0 24px rgba(21, 101, 192, 0.08);
@@ -110,11 +110,25 @@
   .nav-links {
     flex-direction: column;
     align-items: flex-start;
-    gap: 18px;
+    gap: 4px;
+  }
+  .nav-link {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 0.95rem;
   }
   .nav-toggle {
     display: flex;
     cursor: pointer;
+  }
+
+  /* Footer: 1-col on tablet */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-desc {
+    max-width: 100%;
   }
 }
 
@@ -199,11 +213,17 @@
     flex: 1 1 100%;
   }
 
-  .logo span {
-    font-size: 1rem;
+  .logo-tagline {
+    display: none;
   }
-  .logo img {
-    height: 40px;
+
+  .footer-grid {
+    gap: 24px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
   }
 
   .glass-card {
