@@ -1,0 +1,203 @@
+/* ===============================
+   LARGE TABLETS
+================================ */
+@media (max-width: 1100px) {
+  .hero-grid,
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scope-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .downloads-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===============================
+   TABLETS
+================================ */
+@media (max-width: 900px) {
+  .section {
+    padding: 75px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 1.95rem;
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+  }
+
+  .features-grid,
+  .contact-grid,
+  .supervisors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scope-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav {
+    position: fixed;
+    top: 76px;
+    right: -100%;
+    width: 290px;
+    height: calc(100vh - 76px);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(14px);
+    padding: 24px;
+    transition: right 0.3s ease;
+    border-left: 1px solid var(--border-light);
+    box-shadow: -8px 0 24px rgba(13, 110, 253, 0.08);
+  }
+
+  .nav.open {
+    right: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .nav-toggle {
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 640px) {
+  .container {
+    width: 92%;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 36px;
+  }
+
+  .section-heading h2 {
+    font-size: 1.65rem;
+  }
+
+  .hero {
+    padding-top: 105px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content h1 span {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+  }
+
+  .scope-grid,
+  .downloads-grid,
+  .team-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-buttons {
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    flex: 1 1 100%;
+  }
+
+  .logo span {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .person-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .glass-card {
+    padding: 18px;
+  }
+
+  .accordion-header {
+    font-size: 0.95rem;
+    padding: 15px 16px;
+  }
+
+  .accordion-body {
+    padding: 0 16px;
+  }
+
+  .hero-image-card img {
+    height: 300px;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+@media (max-width: 420px) {
+  .section-heading h2 {
+    font-size: 1.45rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.55rem;
+  }
+
+  .btn {
+    padding: 11px 16px;
+    font-size: 0.92rem;
+  }
+
+  .stat-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .stat-card p {
+    font-size: 0.9rem;
+  }
+
+  .nav {
+    width: 100%;
+    right: -100%;
+  }
+}

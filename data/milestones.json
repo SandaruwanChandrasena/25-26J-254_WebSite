@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Project Proposal",
+    "date": "2025-12-XX",
+    "marks": "5%",
+    "description": "Initial proposal submission including research problem, literature review, methodology, and expected outcomes.",
+    "links": [
+      {
+        "label": "Marking Scheme",
+        "url": "https://drive.google.com/file/d/1rWP88dRnvvA_ye0bIIhTEtkqfk0tDEAG/view?usp=drive_link"
+      },
+      {
+        "label": "Slides (PDF)",
+        "url": "https://drive.google.com/file/d/1mKr5eKI2KHC6aNhi7Argit8m9TwGNuvg/view?usp=sharing"
+      },
+      {
+        "label": "View Presentation",
+        "url": "https://docs.google.com/presentation/d/1VVIWQNqEkteTcQEv8NTPHDs63G6PQAny/edit?usp=sharing&ouid=105835760199156672688&rtpof=true&sd=true"
+      }
+    ]
+  },
+
+  {
+    "title": "Progress Presentation I",
+    "date": "2026-03-09",
+    "marks": "15%",
+    "description": "Evaluation of initial prototype, research progress, and system design validation.",
+    "links": [
+      {
+        "label": "Marking Scheme",
+        "url": "https://drive.google.com/file/d/1PAnHLCg9MQ7Cru5ZdHLl74P7yhbco-l2/view?usp=drive_link"
+      },
+      {
+        "label": "Slides (PDF)",
+        "url": "https://drive.google.com/file/d/1sLSqfaoY7WP30qTyD5zNC_FghYcj5sNi/view?usp=drive_linkF"
+      },
+      {
+        "label": "View Presentation",
+        "url": "https://docs.google.com/presentation/d/1XTlQX9xtGnVHA2rxutSbKRPFaIymB_UL/edit?usp=drive_link&ouid=105835760199156672688&rtpof=true&sd=true"
+      }
+    ]
+  },
+
+  {
+    "title": "Progress Presentation II",
+    "date": "2026-03-10",
+    "marks": "18%",
+    "description": "Assessment of advanced implementation, system improvements, and feature integration.",
+    "links": [
+      {
+        "label": "Marking Scheme",
+        "url": "https://drive.google.com/file/d/1pk8evv4GgB41Cv_bKLkAusH70ZCftPeK/view?usp=drive_link"
+      },
+      {
+        "label": "Slides (PDF)",
+        "url": "https://drive.google.com/file/d/1QOG6Z9j71MMyBqY4jMD7Er6WBrhtVy6h/view?usp=drive_link"
+      },
+      {
+        "label": "View Presentation",
+        "url": "https://docs.google.com/presentation/d/1zOpDAVLEDz10gF-Ze5EQY9kQlt2L1jVa/edit?usp=drive_link&ouid=105835760199156672688&rtpof=true&sd=true"
+      }
+    ]
+  },
+
+  {
+    "title": "Final Presentation",
+    "date": "2026-XX-XX",
+    "marks": "10%",
+    "description": "Final system demonstration, showcasing completed features, AI models, and overall project outcomes.",
+    "links": [
+      {
+        "label": "Marking Scheme",
+        "url": "https://drive.google.com/file/d/1w__eybM8dyOpQoQdjXwqZOnr7VMlsdRG/view?usp=drive_link"
+      },
+      {
+        "label": "Slides (PDF)",
+        "url": "COMING_SOON"
+      },
+      {
+        "label": "View Presentation",
+        "url": "COMING_SOON"
+      }
+    ]
+  },
+
+  {
+    "title": "Final Report",
+    "date": "2026-XX-XX",
+    "marks": "19%",
+    "description": "Comprehensive documentation of the entire research project, including methodology, implementation, and evaluation.",
+    "links": [
+      {
+        "label": "Marking Scheme",
+        "url": "https://drive.google.com/file/d/1Po5-tgiCj1MFqPta0HM6IVeLCQZwnffx/view?usp=drive_link"
+      },
+      {
+        "label": "Download Report",
+        "url": "COMING_SOON"
+      }
+    ]
+  },
+
+  {
+    "title": "Viva",
+    "date": "2026-XX-XX",
+    "marks": "10%",
+    "description": "Individual evaluation of knowledge, technical understanding, and contribution to the research project.",
+    "links": [
+      {
+        "label": "Marking Scheme",
+        "url": "https://drive.google.com/file/d/13phaJ16QmX4K6ly5_zq0Hq4K8xCWJQhb/view?usp=drive_link"
+      },
+      {
+        "label": "Documents",
+        "url": "COMING_SOON"
+      }
+    ]
+  }
+]

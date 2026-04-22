@@ -1,0 +1,164 @@
+/* ===============================
+   BASIC REVEAL ANIMATIONS
+================================ */
+.reveal,
+.fade-up,
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in {
+  transform: scale(0.98);
+}
+
+.reveal.active,
+.fade-up.active,
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* ===============================
+   BUTTON HOVER SHINE
+================================ */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn:hover::after {
+  left: 130%;
+}
+
+/* ===============================
+   CARD HOVER EFFECTS
+================================ */
+.feature-card,
+.scope-card,
+.person-card,
+.mini-card,
+.contact-card,
+.stat-card,
+.download-card,
+.accordion-item {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.feature-card:hover,
+.scope-card:hover,
+.person-card:hover,
+.mini-card:hover,
+.contact-card:hover,
+.stat-card:hover,
+.download-card:hover,
+.accordion-item:hover {
+  transform: translateY(-6px);
+}
+
+/* ===============================
+   HERO IMAGE FLOAT
+================================ */
+.hero-image-card img {
+  animation: floatImage 4.5s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ===============================
+   ACCORDION ANIMATION
+================================ */
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.accordion-item.active .accordion-body {
+  opacity: 1;
+}
+
+/* ===============================
+   TAB CONTENT ANIMATION
+================================ */
+.tab-content {
+  animation: fadeTab 0.35s ease;
+}
+
+@keyframes fadeTab {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   NAV TOGGLE ANIMATION
+================================ */
+.nav-toggle span {
+  transition: all 0.3s ease;
+}
+
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===============================
+   BACK TO TOP FADE
+================================ */
+.back-to-top {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  transform: translateY(10px);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ===============================
+   PROGRESS BAR
+================================ */
+.scroll-progress {
+  transition: width 0.15s linear;
+}

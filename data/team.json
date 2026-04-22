@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Chandrasena Y.P.S",
+    "id": "IT22028600",
+    "role": "Social Media Interaction Pattern Analysis",
+    "image": "images/team/chandrasena.jpg"
+  },
+  {
+    "name": "Kulathunga K.G.C.N",
+    "id": "IT22906212",
+    "role": "Sleep Disruption Risk Estimation",
+    "image": "images/team/kulathunga.jpg"
+  },
+  {
+    "name": "Ranathunga K.B.A.D.H",
+    "id": "IT22119544",
+    "role": "Social Isolation & Loneliness Risk Detection",
+    "image": "images/team/ranathunga.jpg"
+  },
+  {
+    "name": "Pomodya K.W.R",
+    "id": "IT22094018",
+    "role": "Mental Health Predictor from Screen Usage Logs",
+    "image": "images/team/pomodya.jpg"
+  }
+]
