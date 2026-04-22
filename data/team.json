@@ -2,25 +2,33 @@
   {
     "name": "Chandrasena Y.P.S",
     "id": "IT22028600",
-    "role": "Social Media Interaction Pattern Analysis",
-    "image": "images/team/chandrasena.jpg"
+    "role": "Social Media Analysis",
+    "image": "images/team/chandrasena.jpg",
+    "linkedin": "https://www.linkedin.com/in/sandaruwanchandrasena/",
+    "email": "it22028600@my.sliit.lk"
   },
   {
     "name": "Kulathunga K.G.C.N",
     "id": "IT22906212",
-    "role": "Sleep Disruption Risk Estimation",
-    "image": "images/team/kulathunga.jpg"
+    "role": "Sleep Disruption Estimation",
+    "image": "images/team/kulathunga.jpg",
+    "linkedin": "https://www.linkedin.com/in/chalana-nethsara/",
+    "email": "it22906212@my.sliit.lk"
   },
   {
     "name": "Ranathunga K.B.A.D.H",
     "id": "IT22119544",
-    "role": "Social Isolation & Loneliness Risk Detection",
-    "image": "images/team/ranathunga.jpg"
+    "role": "Isolation & Loneliness Detection",
+    "image": "images/team/ranathunga.jpg",
+    "linkedin": "https://www.linkedin.com/in/dimasha-ranathunga-393290322/",
+    "email": "it22119544@my.sliit.lk"
   },
   {
     "name": "Pomodya K.W.R",
     "id": "IT22094018",
-    "role": "Mental Health Predictor from Screen Usage Logs",
-    "image": "images/team/pomodya.jpg"
+    "role": "Mental Health Predictor",
+    "image": "images/team/pomodya.jpg",
+    "linkedin": "https://www.linkedin.com/in/ridmi-pomodya-0043a6257/",
+    "email": "it22094018@my.sliit.lk"
   }
 ]

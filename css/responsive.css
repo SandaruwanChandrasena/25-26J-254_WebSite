@@ -30,6 +30,8 @@
     grid-column: auto;
   }
 
+  /* Both grids go to 2 columns together */
+  .supervisors-grid,
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -37,7 +39,6 @@
   .downloads-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
 }
 
 /* ===============================
@@ -80,17 +81,16 @@
 
   .features-grid,
   .contact-grid,
-  .supervisors-grid {
-    grid-template-columns: 1fr;
-  }
-
   .scope-mini-points,
   .scope-grid {
     grid-template-columns: 1fr;
   }
 
-  .scope-card-wide {
-    grid-column: auto;
+  /* Supervisors stay 2-col on tablet — they only have 2 cards */
+  .supervisors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .nav {
@@ -103,8 +103,8 @@
     backdrop-filter: blur(14px);
     padding: 24px;
     transition: right 0.3s ease;
-    border-left: 1px solid var(--border-light);
-    box-shadow: -8px 0 24px rgba(13, 110, 253, 0.08);
+    border-left: 1px solid var(--border);
+    box-shadow: -8px 0 24px rgba(21, 101, 192, 0.1);
   }
 
   .nav.open {
@@ -191,6 +191,12 @@
     grid-template-columns: 1fr;
   }
 
+  /* Supervisors stack to 1 column on small mobile */
+  .supervisors-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
   .tab-buttons {
     flex-wrap: wrap;
   }
@@ -207,18 +213,13 @@
     height: 40px;
   }
 
-  .person-card img {
-    width: 100px;
-    height: 100px;
-  }
-
   .glass-card {
     padding: 18px;
   }
 
   .accordion-header {
-    font-size: 0.95rem;
     padding: 16px;
+    align-items: flex-start;
   }
 
   .accordion-body {
@@ -257,22 +258,13 @@
     height: 180px;
   }
 
-
-  .team-grid {
-    grid-template-columns: 1fr;
+  .team-image img {
+    height: 220px;
   }
 
-  .supervisor-card {
+  .team-footer {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .supervisor-card .person-image-wrap {
-    margin: 0 auto 14px;
-  }
-
-  .about-subheading {
-    text-align: center;
+    align-items: flex-start;
   }
 }
 
