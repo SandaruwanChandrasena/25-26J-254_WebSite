@@ -1,467 +1,601 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ScreenMind | AI-Based Mental Health Detection System</title>
-  <meta
-    name="description"
-    content="ScreenMind is an AI-Based Mental Health Detection System for Smartphone Addiction using digital phenotyping, behavioral analytics, and explainable AI."
-  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScreenMind | AI-Based Mental Health Detection System</title>
+    <meta
+      name="description"
+      content="ScreenMind is an AI-Based Mental Health Detection System for Smartphone Addiction using digital phenotyping, behavioral analytics, and explainable AI."
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-</head>
-<body>
-  <!-- Scroll Progress -->
-  <div class="scroll-progress"></div>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
 
-  <!-- Header -->
-  <header class="header" id="top">
-    <div class="container nav-container">
-      <a href="#home" class="logo">
-        <img src="images/logo/screenmind-logo.png" alt="ScreenMind Logo" />
-        <span>ScreenMind</span>
-      </a>
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="container nav-container">
+        <a href="#home" class="logo">
+          <img src="images/logo/screenmind-logo.png" alt="ScreenMind Logo" />
+          <span>ScreenMind</span>
+        </a>
 
-      <nav class="nav" id="navMenu">
-        <ul class="nav-links">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#scope" class="nav-link">Project Scope</a></li>
-          <li><a href="#overview" class="nav-link">System Overview</a></li>
-          <li><a href="#features" class="nav-link">Features</a></li>
-          <li><a href="#milestones" class="nav-link">Milestones</a></li>
-          <li><a href="#downloads" class="nav-link">Downloads</a></li>
-          <li><a href="#about" class="nav-link">About Us</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+        <nav class="nav" id="navMenu">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#scope" class="nav-link">Project Scope</a></li>
+            <li><a href="#overview" class="nav-link">System Overview</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#milestones" class="nav-link">Milestones</a></li>
+            <li><a href="#downloads" class="nav-link">Downloads</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero section" id="home">
-  <div class="container hero-grid">
+    <main>
+      <!-- Hero Section -->
+      <section class="hero section" id="home">
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
 
-    <!-- LEFT SIDE -->
-    <div class="hero-content">
-      <p class="eyebrow">Digital Phenotyping for Early Intervention</p>
+        <div class="container hero-grid">
+          <div class="hero-content fade-up">
+            <p class="eyebrow">Digital Phenotyping for Early Intervention</p>
 
-      <h1>
-        ScreenMind
-        <span>AI-Based Mental Health Detection System for Smartphone Addiction</span>
-      </h1>
+            <h1>
+              ScreenMind
+              <span
+                >AI-Based Mental Health Detection System for Smartphone
+                Addiction</span
+              >
+            </h1>
 
-      <p class="hero-text">
-        ScreenMind is an AI-powered system designed to detect mental health risks 
-        using smartphone usage patterns, sleep behavior, and social interaction analysis.
+            <p class="hero-text">
+              ScreenMind is an AI-powered system designed to detect mental
+              health risks using smartphone usage patterns, sleep behavior, and
+              social interaction analysis.
+            </p>
+
+            <div class="hero-highlights">
+              <span class="hero-pill">AI-Powered</span>
+              <span class="hero-pill">Mobile-Based</span>
+              <span class="hero-pill">Early Detection</span>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#scope" class="btn btn-primary">Explore Project</a>
+              <a href="#downloads" class="btn btn-outline">View Documents</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-card">
+                <h3>4</h3>
+                <p>Core Modules</p>
+              </div>
+              <div class="stat-card">
+                <h3>AI</h3>
+                <p>Driven System</p>
+              </div>
+              <div class="stat-card">
+                <h3>Real-Time</h3>
+                <p>Monitoring</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual fade-in">
+            <div class="hero-image-wrap">
+              <div class="hero-image-card">
+                <img
+                  src="images/hero/hero-banner.jpg"
+                  alt="ScreenMind Hero Image"
+                />
+              </div>
+
+              <div class="floating-badge badge-top">
+                <span class="badge-title">Research Focus</span>
+                <strong>Mental Health + AI</strong>
+              </div>
+
+              <div class="floating-badge badge-bottom">
+                <span class="badge-title">Platform</span>
+                <strong>Smartphone-Based Detection</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Scope -->
+      <section class="section section-alt" id="scope">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Project Scope</p>
+            <h2>Research Foundation of ScreenMind</h2>
+            <p>
+              ScreenMind addresses the growing mental health impact of excessive
+              smartphone use through an integrated AI-based detection and early
+              intervention platform.
+            </p>
+          </div>
+
+          <div class="scope-layout">
+            <div class="scope-intro glass-card reveal">
+              <div class="scope-intro-top">
+                <span class="scope-badge">Research Overview</span>
+                <h3>Building an AI-Powered Digital Mental Health Companion</h3>
+              </div>
+
+              <p>
+                Smartphones and social media are deeply embedded in daily life,
+                but excessive usage is strongly linked to stress, anxiety,
+                depression, poor sleep, and reduced focus. Existing tools often
+                provide only screen-time tracking without meaningful mental
+                health insights.
+              </p>
+
+              <p>
+                ScreenMind addresses this gap through a multi-module system that
+                combines smartphone sensing, AI-based behavioral analysis,
+                explainable results, and preventive support for healthier
+                digital habits.
+              </p>
+
+              <div class="scope-mini-points">
+                <div class="mini-point">
+                  <strong>Problem Focus</strong>
+                  <span>Smartphone addiction and well-being</span>
+                </div>
+                <div class="mini-point">
+                  <strong>Approach</strong>
+                  <span>Digital phenotyping with AI models</span>
+                </div>
+                <div class="mini-point">
+                  <strong>Outcome</strong>
+                  <span>Early detection and intervention</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="scope-grid">
+              <article class="scope-card glass-card reveal">
+                <div class="scope-card-icon">01</div>
+                <h3>Research Problem</h3>
+                <p>
+                  The project investigates how smartphone behavior,
+                  sleep-related data, communication signals, and screen usage
+                  patterns can be analyzed with AI to detect early mental health
+                  risks and support timely preventive action.
+                </p>
+              </article>
+
+              <article class="scope-card glass-card reveal">
+                <div class="scope-card-icon">02</div>
+                <h3>Research Gap</h3>
+                <p>
+                  Current systems mainly focus on usage statistics,
+                  self-reporting, or isolated data sources. They lack holistic,
+                  real-time, privacy-aware, and explainable solutions for
+                  smartphone-addiction-related well-being issues.
+                </p>
+              </article>
+
+              <article class="scope-card glass-card reveal">
+                <div class="scope-card-icon">03</div>
+                <h3>Research Objectives</h3>
+                <ul class="custom-list">
+                  <li>Predict mental health risks from screen usage logs</li>
+                  <li>
+                    Analyze social media interaction patterns for distress
+                    signals
+                  </li>
+                  <li>Detect social isolation and loneliness trends</li>
+                  <li>
+                    Estimate sleep disruption risks using phone-based sensor
+                    data
+                  </li>
+                </ul>
+              </article>
+
+              <article class="scope-card glass-card reveal">
+                <div class="scope-card-icon">04</div>
+                <h3>Methodology</h3>
+                <p>
+                  The methodology combines passive smartphone sensing, local
+                  feature extraction, AI/ML-based analysis, risk scoring,
+                  explainable results, and actionable interventions through a
+                  mobile-first architecture.
+                </p>
+              </article>
+
+              <article class="scope-card glass-card reveal scope-card-wide">
+                <div class="scope-card-icon">05</div>
+                <h3>Technologies Used</h3>
+                <div class="tech-tags">
+                  <span>React Native</span>
+                  <span>Kotlin</span>
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                  <span>Firebase</span>
+                  <span>SQLite</span>
+                  <span>LSTM</span>
+                  <span>BiLSTM</span>
+                  <span>RoBERTa</span>
+                  <span>TensorFlow</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- System Overview -->
+      <section class="section" id="overview">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="section-tag">System Overview</p>
+      <h2>How the ScreenMind Platform Works</h2>
+      <p>
+        Explore the major diagrams and planning visuals of the ScreenMind research project.
+        Click any diagram on the right to preview it in the main display area.
       </p>
-
-      <div class="hero-buttons">
-        <a href="#scope" class="btn btn-primary">Explore Project</a>
-        <a href="#downloads" class="btn btn-outline">View Documents</a>
-      </div>
-
-      <div class="hero-stats">
-        <div class="stat-card">
-          <h3>4</h3>
-          <p>Core Modules</p>
-        </div>
-        <div class="stat-card">
-          <h3>AI</h3>
-          <p>Driven System</p>
-        </div>
-        <div class="stat-card">
-          <h3>Real-Time</h3>
-          <p>Monitoring</p>
-        </div>
-      </div>
     </div>
 
-    <!-- RIGHT SIDE -->
-    <div class="hero-visual">
-      <div class="hero-image-card">
-        <img src="images/hero/hero-banner.jpg" alt="ScreenMind Hero Image">
+    <div class="overview-switcher">
+      <!-- Main Preview -->
+      <div class="overview-preview glass-card reveal">
+        <span class="scope-badge" id="overviewBadge">Architecture Diagram</span>
+        <h3 id="overviewTitle">Integrated Mental Health Detection Workflow</h3>
+
+        <div class="overview-preview-image">
+          <img
+            id="overviewMainImage"
+            src="images/diagrams/system-architecture.png"
+            alt="System Architecture Diagram"
+          />
+        </div>
+
+        <p id="overviewDescription" class="overview-description">
+          The platform combines smartphone sensing, feature extraction, AI-based prediction,
+          and explainable result delivery into one connected mobile-first system.
+        </p>
+      </div>
+
+      <!-- Thumbnails / Selectors -->
+      <div class="overview-thumbnails reveal">
+        <button
+          class="overview-thumb active"
+          data-badge="Architecture Diagram"
+          data-title="Integrated Mental Health Detection Workflow"
+          data-image="images/diagrams/system-architecture.png"
+          data-description="The platform combines smartphone sensing, feature extraction, AI-based prediction, and explainable result delivery into one connected mobile-first system."
+        >
+          <img src="images/diagrams/system-architecture.png" alt="Architecture Diagram Thumbnail" />
+          <div class="overview-thumb-text">
+            <h4>System Architecture</h4>
+            <p>Main workflow of the full platform</p>
+          </div>
+        </button>
+
+        <button
+          class="overview-thumb"
+          data-badge="Methodology Diagram"
+          data-title="Research Methodology Flow"
+          data-image="images/diagrams/methodology-diagram.png"
+          data-description="This diagram presents the step-by-step process of the research workflow, from data collection and preprocessing to AI analysis, prediction, and user-facing intervention."
+        >
+          <img src="images/diagrams/methodology-diagram.png" alt="Methodology Diagram Thumbnail" />
+          <div class="overview-thumb-text">
+            <h4>Methodology Diagram</h4>
+            <p>Step-by-step research process</p>
+          </div>
+        </button>
+
+        <button
+          class="overview-thumb"
+          data-badge="Solution Overview"
+          data-title="Complete ScreenMind Solution Structure"
+          data-image="images/diagrams/solution-overview.png"
+          data-description="This overview highlights the major modules of ScreenMind and shows how the four intelligent components contribute to the complete mental health detection system."
+        >
+          <img src="images/diagrams/solution-overview.png" alt="Solution Overview Thumbnail" />
+          <div class="overview-thumb-text">
+            <h4>Solution Overview</h4>
+            <p>High-level summary of the full solution</p>
+          </div>
+        </button>
+
+        <button
+          class="overview-thumb"
+          data-badge="Project Management"
+          data-title="Project Planning & Management View"
+          data-image="images/diagrams/project-management-tool.png"
+          data-description="This screenshot shows the task tracking and project planning workflow used by the team to manage milestones, responsibilities, and overall progress."
+        >
+          <img src="images/diagrams/project-management-tool.png" alt="Project Management Tool Thumbnail" />
+          <div class="overview-thumb-text">
+            <h4>Project Management Tool</h4>
+            <p>Planning, tracking, and team workflow</p>
+          </div>
+        </button>
       </div>
     </div>
-
   </div>
 </section>
 
-    <!-- Project Scope -->
-    <section class="section" id="scope">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-tag">Project Scope</p>
-          <h2>Research Foundation of ScreenMind</h2>
-          <p>
-            ScreenMind addresses the growing mental health impact of excessive
-            smartphone use through an integrated AI-based detection and early
-            intervention platform.
-          </p>
-        </div>
-
-        <div class="scope-grid">
-          <article class="scope-card glass-card reveal">
-            <h3>Introduction</h3>
+      <!-- Features -->
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Key Features</p>
+            <h2>Four Intelligent Detection Modules</h2>
             <p>
-              Smartphones and social media are deeply embedded in daily life, but
-              excessive usage is strongly linked to stress, anxiety, depression,
-              poor sleep, and reduced focus. Existing tools often provide only
-              screen-time tracking without meaningful mental health insights.
+              ScreenMind is built around four interconnected modules that
+              monitor digital behavior and identify different dimensions of
+              mental health risk.
             </p>
-          </article>
+          </div>
 
-          <article class="scope-card glass-card reveal">
-            <h3>Research Problem</h3>
+          <div class="features-grid">
+            <article class="feature-card glass-card reveal">
+              <img
+                src="images/features/mental-health-predictor.png"
+                alt="Mental health predictor"
+              />
+              <div class="feature-content">
+                <h3>Mental Health Predictor from Screen Usage Logs</h3>
+                <p>
+                  Combines real screen usage data with validated mental health
+                  questionnaires to estimate user risk levels and provide
+                  actionable dashboard insights.
+                </p>
+              </div>
+            </article>
+
+            <article class="feature-card glass-card reveal">
+              <img
+                src="images/features/social-media-analysis.png"
+                alt="Social media interaction analysis"
+              />
+              <div class="feature-content">
+                <h3>Social Media Interaction Pattern Analysis</h3>
+                <p>
+                  Uses AI-driven sentiment analysis on social media notification
+                  patterns to detect negative emotional exposure and generate
+                  real-time warning insights.
+                </p>
+              </div>
+            </article>
+
+            <article class="feature-card glass-card reveal">
+              <img
+                src="images/features/social-isolation-loneliness.png"
+                alt="Social isolation and loneliness detection"
+              />
+              <div class="feature-content">
+                <h3>Social Isolation &amp; Loneliness Risk Detection</h3>
+                <p>
+                  Monitors mobility, communication, behavioral, and proximity
+                  patterns to identify early signs of social withdrawal and
+                  loneliness through explainable AI risk analysis.
+                </p>
+              </div>
+            </article>
+
+            <article class="feature-card glass-card reveal">
+              <img
+                src="images/features/sleep-disruption.png"
+                alt="Sleep disruption estimation"
+              />
+              <div class="feature-content">
+                <h3>Sleep Disruption Risk Estimation</h3>
+                <p>
+                  Tracks late-night phone behavior and phone-based sensor
+                  activity to estimate sleep disruption risk and deliver
+                  personalized preventive guidance.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Milestones -->
+      <section class="section section-alt" id="milestones">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Milestones</p>
+            <h2>Project Timeline & Assessments</h2>
             <p>
-              The project investigates how smartphone behavior, sleep-related data,
-              communication signals, and screen usage patterns can be analyzed with
-              AI to detect early mental health risks and support timely preventive
-              action.
+              The milestones section presents the key academic evaluations of
+              the ScreenMind project, including descriptions, dates, and marks
+              allocation.
             </p>
-          </article>
+          </div>
 
-          <article class="scope-card glass-card reveal">
-            <h3>Research Gap</h3>
+          <div class="milestones-wrapper">
+            <div class="accordion" id="milestonesAccordion">
+              <!-- Filled by data/milestones.json -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Downloads -->
+      <section class="section" id="downloads">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Downloads</p>
+            <h2>Documents, Presentations & Marking Schemes</h2>
             <p>
-              Current systems mainly focus on usage statistics, self-reporting, or
-              isolated data sources. They lack holistic, real-time, privacy-aware,
-              and explainable solutions for smartphone-addiction-related well-being
-              issues.
+              Access project-related files through organized download
+              categories. External links can be connected to Google Drive for
+              easy document management and updates.
             </p>
-          </article>
+          </div>
 
-          <article class="scope-card glass-card reveal">
-            <h3>Research Objectives</h3>
-            <ul class="custom-list">
-              <li>Predict mental health risks from screen usage logs</li>
-              <li>Analyze social media interaction patterns for distress signals</li>
-              <li>Detect social isolation and loneliness trends</li>
-              <li>Estimate sleep disruption risks using phone-based sensor data</li>
-            </ul>
-          </article>
+          <div class="tabs reveal">
+            <div class="tab-buttons">
+              <button class="tab-btn active" data-tab="documents">
+                Documents
+              </button>
+              <button class="tab-btn" data-tab="presentations">
+                Presentations
+              </button>
+              <button class="tab-btn" data-tab="marking">
+                Marking Schemes
+              </button>
+            </div>
 
-          <article class="scope-card glass-card reveal">
-            <h3>Methodology</h3>
+            <div class="tab-content active" id="documents">
+              <div class="downloads-grid" id="documentsGrid">
+                <!-- Filled by data/downloads.json -->
+              </div>
+            </div>
+
+            <div class="tab-content" id="presentations">
+              <div class="downloads-grid" id="presentationsGrid">
+                <!-- Filled by data/downloads.json -->
+              </div>
+            </div>
+
+            <div class="tab-content" id="marking">
+              <div class="downloads-grid" id="markingGrid">
+                <!-- Filled by data/downloads.json -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section section-alt" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">About Us</p>
+            <h2>The Research Team Behind ScreenMind</h2>
             <p>
-              The methodology combines passive smartphone sensing, local feature
-              extraction, AI/ML-based analysis, risk scoring, explainable results,
-              and actionable interventions through a mobile-first architecture.
+              ScreenMind is developed by an undergraduate research team focused
+              on applying AI and digital phenotyping to support mental health
+              awareness and early preventive care.
             </p>
-          </article>
+          </div>
 
-          <article class="scope-card glass-card reveal">
-            <h3>Technologies Used</h3>
-            <div class="tech-tags">
-              <span>React Native</span>
-              <span>Kotlin</span>
-              <span>Python</span>
-              <span>FastAPI</span>
-              <span>Firebase</span>
-              <span>SQLite</span>
-              <span>LSTM</span>
-              <span>BiLSTM</span>
-              <span>RoBERTa</span>
-              <span>TensorFlow</span>
+          <div class="supervisors-grid">
+            <div class="person-card glass-card reveal">
+              <img src="images/team/supervisor.jpg" alt="Supervisor" />
+              <h3>Ms. Sanjeevi Chandrasiri</h3>
+              <p class="role">Supervisor</p>
             </div>
-          </article>
+
+            <div class="person-card glass-card reveal">
+              <img src="images/team/co-supervisor.jpg" alt="Co-Supervisor" />
+              <h3>Ms. Sasini Hathurusinghe</h3>
+              <p class="role">Co-Supervisor</p>
+            </div>
+          </div>
+
+          <div class="team-grid" id="teamGrid">
+            <!-- Filled by data/team.json -->
+          </div>
         </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Contact Us</p>
+            <h2>Get in Touch</h2>
+            <p>
+              For project inquiries, academic communication, or
+              collaboration-related discussions, feel free to contact the
+              ScreenMind research team.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card glass-card reveal">
+              <h3>Project Information</h3>
+              <ul class="contact-list">
+                <li><strong>Project Name:</strong> ScreenMind</li>
+                <li>
+                  <strong>Research Area:</strong> Digital Phenotyping & Mental
+                  Health AI
+                </li>
+                <li>
+                  <strong>Institution:</strong> SLIIT Faculty of Computing
+                </li>
+                <li><strong>Project ID:</strong> 25-26J-254</li>
+              </ul>
+            </div>
+
+            <div class="contact-card glass-card reveal">
+              <h3>Contact Details</h3>
+              <ul class="contact-list">
+                <li><strong>Email:</strong> yourgroupemail@example.com</li>
+                <li>
+                  <strong>Location:</strong> Sri Lanka Institute of Information
+                  Technology
+                </li>
+                <li>
+                  <strong>Availability:</strong> Academic Project Communication
+                </li>
+              </ul>
+              <a
+                href="mailto:yourgroupemail@example.com"
+                class="btn btn-primary btn-small"
+              >
+                Email the Team
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2026 ScreenMind. All Rights Reserved.</p>
+        <p>
+          Designed for the AI-Based Mental Health Detection System for
+          Smartphone Addiction.
+        </p>
       </div>
-    </section>
+    </footer>
 
-    <!-- System Overview -->
-    <section class="section section-alt" id="overview">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-tag">System Overview</p>
-          <h2>How the ScreenMind Platform Works</h2>
-          <p>
-            ScreenMind functions as a digital phenotyping ecosystem that collects
-            privacy-aware behavioral signals, processes meaningful features, applies
-            AI models, and presents interpretable mental health risk insights to users.
-          </p>
-        </div>
+    <!-- Back to Top -->
+    <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top"
+      >↑</a
+    >
 
-        <div class="overview-grid">
-          <div class="overview-main glass-card reveal">
-            <img
-              src="images/diagrams/system-architecture.png"
-              alt="ScreenMind system architecture diagram"
-            />
-          </div>
-
-          <div class="overview-side">
-            <div class="mini-card glass-card reveal">
-              <h3>Data Collection</h3>
-              <p>
-                Smartphone usage, notifications, mobility indicators, proximity
-                signals, and sleep-related behavior are captured with privacy-aware
-                methods.
-              </p>
-            </div>
-
-            <div class="mini-card glass-card reveal">
-              <h3>AI Processing</h3>
-              <p>
-                Extracted behavioral features are analyzed through weighted logic,
-                LSTM/BiLSTM models, and transformer-based sentiment analysis.
-              </p>
-            </div>
-
-            <div class="mini-card glass-card reveal">
-              <h3>Risk Insights</h3>
-              <p>
-                Users receive low, moderate, or high risk insights, explainable
-                summaries, and proactive recommendations to improve well-being.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features -->
-    <section class="section" id="features">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-tag">Key Features</p>
-          <h2>Four Intelligent Detection Modules</h2>
-          <p>
-            ScreenMind is built around four interconnected modules that monitor
-            digital behavior and identify different dimensions of mental health risk.
-          </p>
-        </div>
-
-        <div class="features-grid">
-          <article class="feature-card glass-card reveal">
-            <img
-              src="images/features/mental-health-predictor.png"
-              alt="Mental health predictor"
-            />
-            <div class="feature-content">
-              <h3>Mental Health Predictor from Screen Usage Logs</h3>
-              <p>
-                Combines real screen usage data with validated mental health
-                questionnaires to estimate user risk levels and provide actionable
-                dashboard insights.
-              </p>
-            </div>
-          </article>
-
-          <article class="feature-card glass-card reveal">
-            <img
-              src="images/features/social-media-analysis.png"
-              alt="Social media interaction analysis"
-            />
-            <div class="feature-content">
-              <h3>Social Media Interaction Pattern Analysis</h3>
-              <p>
-                Uses AI-driven sentiment analysis on social media notification
-                patterns to detect negative emotional exposure and generate
-                real-time warning insights.
-              </p>
-            </div>
-          </article>
-
-          <article class="feature-card glass-card reveal">
-            <img
-              src="images/features/social-isolation-loneliness.png"
-              alt="Social isolation and loneliness detection"
-            />
-            <div class="feature-content">
-              <h3>Social Isolation &amp; Loneliness Risk Detection</h3>
-              <p>
-                Monitors mobility, communication, behavioral, and proximity
-                patterns to identify early signs of social withdrawal and loneliness
-                through explainable AI risk analysis.
-              </p>
-            </div>
-          </article>
-
-          <article class="feature-card glass-card reveal">
-            <img
-              src="images/features/sleep-disruption.png"
-              alt="Sleep disruption estimation"
-            />
-            <div class="feature-content">
-              <h3>Sleep Disruption Risk Estimation</h3>
-              <p>
-                Tracks late-night phone behavior and phone-based sensor activity to
-                estimate sleep disruption risk and deliver personalized preventive
-                guidance.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Milestones -->
-    <section class="section section-alt" id="milestones">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-tag">Milestones</p>
-          <h2>Project Timeline & Assessments</h2>
-          <p>
-            The milestones section presents the key academic evaluations of the
-            ScreenMind project, including descriptions, dates, and marks allocation.
-          </p>
-        </div>
-
-        <div class="milestones-wrapper">
-          <div class="accordion" id="milestonesAccordion">
-            <!-- Filled by data/milestones.json -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Downloads -->
-    <section class="section" id="downloads">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-tag">Downloads</p>
-          <h2>Documents, Presentations & Marking Schemes</h2>
-          <p>
-            Access project-related files through organized download categories.
-            External links can be connected to Google Drive for easy document
-            management and updates.
-          </p>
-        </div>
-
-        <div class="tabs reveal">
-          <div class="tab-buttons">
-            <button class="tab-btn active" data-tab="documents">Documents</button>
-            <button class="tab-btn" data-tab="presentations">Presentations</button>
-            <button class="tab-btn" data-tab="marking">Marking Schemes</button>
-          </div>
-
-          <div class="tab-content active" id="documents">
-            <div class="downloads-grid" id="documentsGrid">
-              <!-- Filled by data/downloads.json -->
-            </div>
-          </div>
-
-          <div class="tab-content" id="presentations">
-            <div class="downloads-grid" id="presentationsGrid">
-              <!-- Filled by data/downloads.json -->
-            </div>
-          </div>
-
-          <div class="tab-content" id="marking">
-            <div class="downloads-grid" id="markingGrid">
-              <!-- Filled by data/downloads.json -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="section section-alt" id="about">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-tag">About Us</p>
-          <h2>The Research Team Behind ScreenMind</h2>
-          <p>
-            ScreenMind is developed by an undergraduate research team focused on
-            applying AI and digital phenotyping to support mental health awareness
-            and early preventive care.
-          </p>
-        </div>
-
-        <div class="supervisors-grid">
-          <div class="person-card glass-card reveal">
-            <img src="images/team/supervisor.jpg" alt="Supervisor" />
-            <h3>Ms. Sanjeevi Chandrasiri</h3>
-            <p class="role">Supervisor</p>
-          </div>
-
-          <div class="person-card glass-card reveal">
-            <img src="images/team/co-supervisor.jpg" alt="Co-Supervisor" />
-            <h3>Ms. Sasini Hathurusinghe</h3>
-            <p class="role">Co-Supervisor</p>
-          </div>
-        </div>
-
-        <div class="team-grid" id="teamGrid">
-          <!-- Filled by data/team.json -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-tag">Contact Us</p>
-          <h2>Get in Touch</h2>
-          <p>
-            For project inquiries, academic communication, or collaboration-related
-            discussions, feel free to contact the ScreenMind research team.
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-card glass-card reveal">
-            <h3>Project Information</h3>
-            <ul class="contact-list">
-              <li><strong>Project Name:</strong> ScreenMind</li>
-              <li><strong>Research Area:</strong> Digital Phenotyping & Mental Health AI</li>
-              <li><strong>Institution:</strong> SLIIT Faculty of Computing</li>
-              <li><strong>Project ID:</strong> 25-26J-254</li>
-            </ul>
-          </div>
-
-          <div class="contact-card glass-card reveal">
-            <h3>Contact Details</h3>
-            <ul class="contact-list">
-              <li><strong>Email:</strong> yourgroupemail@example.com</li>
-              <li><strong>Location:</strong> Sri Lanka Institute of Information Technology</li>
-              <li><strong>Availability:</strong> Academic Project Communication</li>
-            </ul>
-            <a href="mailto:yourgroupemail@example.com" class="btn btn-primary btn-small">
-              Email the Team
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 ScreenMind. All Rights Reserved.</p>
-      <p>Designed for the AI-Based Mental Health Detection System for Smartphone Addiction.</p>
-    </div>
-  </footer>
-
-  <!-- Back to Top -->
-  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
-
-  <!-- Scripts -->
-  <script src="js/navbar.js"></script>
-  <script src="js/accordion.js"></script>
-  <script src="js/tabs.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="js/navbar.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

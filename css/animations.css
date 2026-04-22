@@ -5,12 +5,12 @@
 .fade-up,
 .fade-in {
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(30px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .fade-in {
-  transform: scale(0.98);
+  transform: scale(0.96);
 }
 
 .reveal.active,
@@ -21,7 +21,7 @@
 }
 
 /* ===============================
-   BUTTON HOVER SHINE
+   BUTTON HOVER EFFECT
 ================================ */
 .btn {
   position: relative;
@@ -32,7 +32,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: -130%;
+  left: -120%;
   width: 120%;
   height: 100%;
   background: linear-gradient(
@@ -45,12 +45,13 @@
 }
 
 .btn:hover::after {
-  left: 130%;
+  left: 120%;
 }
 
 /* ===============================
-   CARD HOVER EFFECTS
+   CARD HOVER EFFECT
 ================================ */
+.glass-card,
 .feature-card,
 .scope-card,
 .person-card,
@@ -58,10 +59,12 @@
 .contact-card,
 .stat-card,
 .download-card,
-.accordion-item {
+.accordion-item,
+.overview-thumb {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
+.glass-card:hover,
 .feature-card:hover,
 .scope-card:hover,
 .person-card:hover,
@@ -69,7 +72,8 @@
 .contact-card:hover,
 .stat-card:hover,
 .download-card:hover,
-.accordion-item:hover {
+.accordion-item:hover,
+.overview-thumb:hover {
   transform: translateY(-6px);
 }
 
@@ -87,6 +91,37 @@
   50% {
     transform: translateY(-8px);
   }
+}
+
+/* ===============================
+   FLOATING BADGES (Hero)
+================================ */
+.floating-badge {
+  animation: floatBadge 4s ease-in-out infinite;
+}
+
+.badge-bottom {
+  animation-delay: 0.8s;
+}
+
+@keyframes floatBadge {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* ===============================
+   OVERVIEW IMAGE SWITCH TRANSITION
+================================ */
+#overviewMainImage {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.overview-thumb.active {
+  transform: scale(1.02);
 }
 
 /* ===============================
@@ -146,8 +181,8 @@
 .back-to-top {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
   transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 
 .back-to-top.show {
@@ -157,7 +192,7 @@
 }
 
 /* ===============================
-   PROGRESS BAR
+   SCROLL PROGRESS BAR
 ================================ */
 .scroll-progress {
   transition: width 0.15s linear;

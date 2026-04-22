@@ -3,12 +3,32 @@
 ================================ */
 @media (max-width: 1100px) {
   .hero-grid,
-  .overview-grid {
+  .overview-grid,
+  .overview-switcher {
     grid-template-columns: 1fr;
   }
 
+  .hero-image-wrap {
+    min-height: auto;
+  }
+
+  .badge-top {
+    top: 20px;
+    right: 20px;
+  }
+
+  .badge-bottom {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .scope-mini-points,
   .scope-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .scope-card-wide {
+    grid-column: auto;
   }
 
   .team-grid {
@@ -17,6 +37,10 @@
 
   .downloads-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .overview-extra {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -33,15 +57,29 @@
   }
 
   .hero {
-    padding-top: 120px;
+    padding-top: 130px;
+    padding-bottom: 70px;
+  }
+
+  .hero-content {
+    padding: 26px;
   }
 
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 
   .hero-stats {
     flex-wrap: wrap;
+  }
+
+  .hero-image-card {
+    transform: none;
+    max-width: 100%;
+  }
+
+  .hero-image-card img {
+    height: 380px;
   }
 
   .features-grid,
@@ -50,8 +88,13 @@
     grid-template-columns: 1fr;
   }
 
+  .scope-mini-points,
   .scope-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .scope-card-wide {
+    grid-column: auto;
   }
 
   .nav {
@@ -108,12 +151,17 @@
     padding-top: 105px;
   }
 
+  .hero-content {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .hero-content h1 span {
-    font-size: 1rem;
+    font-size: 1.02rem;
   }
 
   .hero-buttons {
@@ -125,6 +173,21 @@
     flex-direction: column;
   }
 
+  .hero-image-card img {
+    height: 300px;
+  }
+
+  .floating-badge {
+    position: static;
+    margin-top: 14px;
+    width: 100%;
+  }
+
+  .hero-image-wrap {
+    display: block;
+  }
+
+  .scope-mini-points,
   .scope-grid,
   .downloads-grid,
   .team-grid,
@@ -166,8 +229,31 @@
     padding: 0 16px;
   }
 
-  .hero-image-card img {
-    height: 300px;
+  .overview-main,
+  .overview-extra-card,
+  .overview-preview {
+    padding: 20px;
+  }
+
+  .overview-main h3,
+  .overview-preview h3 {
+    font-size: 1.2rem;
+  }
+
+  .overview-extra-card img {
+    height: 220px;
+  }
+
+  .overview-preview-image img {
+    height: 240px;
+  }
+
+  .overview-thumb {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-thumb img {
+    height: 150px;
   }
 }
 
@@ -180,7 +266,7 @@
   }
 
   .hero-content h1 {
-    font-size: 1.55rem;
+    font-size: 1.65rem;
   }
 
   .btn {

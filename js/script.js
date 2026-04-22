@@ -135,3 +135,33 @@ fetch("data/team.json")
       `;
     });
   });
+
+
+  /* ===============================
+   SYSTEM OVERVIEW IMAGE SWITCHER
+================================ */
+const overviewThumbs = document.querySelectorAll(".overview-thumb");
+const overviewMainImage = document.getElementById("overviewMainImage");
+const overviewTitle = document.getElementById("overviewTitle");
+const overviewBadge = document.getElementById("overviewBadge");
+const overviewDescription = document.getElementById("overviewDescription");
+
+overviewThumbs.forEach((thumb) => {
+  thumb.addEventListener("click", () => {
+    overviewThumbs.forEach((item) => item.classList.remove("active"));
+    thumb.classList.add("active");
+
+    const newBadge = thumb.getAttribute("data-badge");
+    const newTitle = thumb.getAttribute("data-title");
+    const newImage = thumb.getAttribute("data-image");
+    const newDescription = thumb.getAttribute("data-description");
+
+    if (overviewBadge) overviewBadge.textContent = newBadge;
+    if (overviewTitle) overviewTitle.textContent = newTitle;
+    if (overviewMainImage) {
+      overviewMainImage.src = newImage;
+      overviewMainImage.alt = newTitle;
+    }
+    if (overviewDescription) overviewDescription.textContent = newDescription;
+  });
+});
