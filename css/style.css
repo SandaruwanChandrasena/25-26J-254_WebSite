@@ -1069,3 +1069,91 @@ a {
   font-size: 0.92rem;
   line-height: 1.5;
 }
+
+/* ===============================
+   FEATURES - ENHANCED
+================================ */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.feature-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top media (image) */
+.feature-media {
+  position: relative;
+  padding: 14px;
+  background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.feature-media img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--border-light);
+  background: #ffffff;
+}
+
+/* Badge */
+.feature-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: var(--primary-blue);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  box-shadow: 0 6px 14px rgba(13, 110, 253, 0.25);
+}
+
+/* Body */
+.feature-body {
+  padding: 20px 22px 22px;
+}
+
+.feature-body h3 {
+  color: var(--dark-blue);
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.feature-body p {
+  color: var(--text-light);
+  margin-bottom: 14px;
+}
+
+/* Bullet points */
+.feature-points {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature-points li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.feature-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+}

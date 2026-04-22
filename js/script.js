@@ -46,6 +46,7 @@ const revealOnScroll = () => {
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
+
 /* ===============================
    LOAD MILESTONES FROM JSON
 ================================ */
@@ -53,6 +54,7 @@ fetch("data/milestones.json")
   .then((res) => res.json())
   .then((data) => {
     const container = document.getElementById("milestonesAccordion");
+    if (!container) return;
 
     data.forEach((item) => {
       const div = document.createElement("div");
@@ -60,19 +62,27 @@ fetch("data/milestones.json")
 
       div.innerHTML = `
         <div class="accordion-header">
-          ${item.title}
+          <div class="accordion-title-wrap">
+            <div class="accordion-title">${item.title}</div>
+            <div class="accordion-meta">
+              <span class="accordion-chip">${item.date}</span>
+              <span class="accordion-chip">${item.marks}</span>
+            </div>
+          </div>
+          <span class="accordion-icon">+</span>
         </div>
+
         <div class="accordion-body">
-          <p><strong>Date:</strong> ${item.date}</p>
-          <p><strong>Marks:</strong> ${item.marks}</p>
-          <p>${item.description}</p>
-          <div class="accordion-links">
-            ${item.links
-              .map(
-                (link) =>
-                  `<a href="${link.url}" target="_blank" class="btn btn-small">${link.label}</a>`
-              )
-              .join("")}
+          <div class="accordion-content">
+            <p>${item.description}</p>
+            <div class="accordion-links">
+              ${item.links
+                .map(
+                  (link) =>
+                    `<a href="${link.url}" target="_blank" class="btn btn-small btn-outline">${link.label}</a>`
+                )
+                .join("")}
+            </div>
           </div>
         </div>
       `;
