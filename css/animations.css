@@ -1,3 +1,6 @@
+/* ===============================
+   SCROLL REVEAL
+================================ */
 .reveal,
 .fade-up,
 .fade-in {
@@ -19,6 +22,9 @@
   transform: translateY(0) scale(1);
 }
 
+/* ===============================
+   BUTTON SHINE EFFECT
+================================ */
 .btn {
   position: relative;
   overflow: hidden;
@@ -44,34 +50,28 @@
   left: 120%;
 }
 
+/* ===============================
+   CARD HOVER TRANSITIONS
+================================ */
 .glass-card,
 .feature-card,
 .scope-card,
-.person-card,
-.contact-card,
+.team-card,
+.contact-detail-card,
+.contact-info-card,
 .stat-card,
 .download-card,
 .accordion-item,
-.overview-thumb,
-.team-card {
+.overview-thumb {
   transition:
     transform 0.35s ease,
-    box-shadow 0.35s ease;
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
 }
 
-.glass-card:hover,
-.feature-card:hover,
-.scope-card:hover,
-.person-card:hover,
-.contact-card:hover,
-.stat-card:hover,
-.download-card:hover,
-.accordion-item:hover,
-.overview-thumb:hover,
-.team-card:hover {
-  transform: translateY(-6px);
-}
-
+/* ===============================
+   HERO IMAGE FLOAT
+================================ */
 .hero-image-card img {
   animation: floatImage 4.5s ease-in-out infinite;
 }
@@ -86,6 +86,9 @@
   }
 }
 
+/* ===============================
+   FLOATING BADGES
+================================ */
 .floating-badge {
   animation: floatBadge 4s ease-in-out infinite;
 }
@@ -104,6 +107,9 @@
   }
 }
 
+/* ===============================
+   OVERVIEW IMAGE SWITCH
+================================ */
 #overviewMainImage {
   transition:
     opacity 0.3s ease,
@@ -114,6 +120,9 @@
   transform: scale(1.02);
 }
 
+/* ===============================
+   ACCORDION OPEN / CLOSE
+================================ */
 .accordion-body {
   max-height: 0;
   overflow: hidden;
@@ -127,6 +136,9 @@
   opacity: 1;
 }
 
+/* ===============================
+   TAB CONTENT FADE
+================================ */
 .tab-content {
   animation: fadeTab 0.35s ease;
 }
@@ -142,6 +154,9 @@
   }
 }
 
+/* ===============================
+   NAV TOGGLE (hamburger → X)
+================================ */
 .nav-toggle span {
   transition: all 0.3s ease;
 }
@@ -149,15 +164,16 @@
 .nav-toggle.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
-
 .nav-toggle.open span:nth-child(2) {
   opacity: 0;
 }
-
 .nav-toggle.open span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/* ===============================
+   BACK TO TOP FADE
+================================ */
 .back-to-top {
   opacity: 0;
   visibility: hidden;
@@ -174,6 +190,38 @@
   transform: translateY(0);
 }
 
+/* ===============================
+   SCROLL PROGRESS BAR
+================================ */
 .scroll-progress {
   transition: width 0.15s linear;
+}
+
+/* ===============================
+   TEAM CARD PHOTO ZOOM
+================================ */
+.team-image img {
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-image img {
+  transform: scale(1.04);
+}
+
+/* ===============================
+   TECH TAG HOVER
+================================ */
+.tech-tags span {
+  transition: all 0.2s ease;
+}
+
+/* ===============================
+   FEATURE IMAGE HOVER
+================================ */
+.feature-media img {
+  transition: transform 0.35s ease;
+}
+
+.feature-card:hover .feature-media img {
+  transform: scale(1.02);
 }
