@@ -540,7 +540,6 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-
 .scope-card {
   position: relative;
   padding-top: 16px;
@@ -863,7 +862,7 @@ a {
 
 /* ===============================
    FEATURES  — FIXED
-   • object-fit: contain  → full diagram visible, no crop
+   • object-fit: contain  → full diagram, no crop
    • .feature-badge static → no overlap on image
 ================================ */
 .features-grid {
@@ -887,13 +886,12 @@ a {
   flex-direction: column;
 }
 
-/* Full diagram — no crop */
 .feature-media img {
   width: 100%;
   height: auto;
   min-height: 160px;
   max-height: 240px;
-  object-fit: contain; /* was cover — changed to contain */
+  object-fit: contain; /* FIXED: was cover, now shows full diagram */
   object-position: center top;
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
@@ -906,10 +904,9 @@ a {
   transform: scale(1.015);
 }
 
-/* Badge flows below image — no absolute overlap */
 .feature-badge {
   display: inline-block;
-  position: static; /* was absolute — now in normal flow */
+  position: static; /* FIXED: was absolute, no more overlap */
   align-self: flex-start;
   margin: 10px 0 14px 0;
   background: var(--primary);
@@ -924,7 +921,6 @@ a {
 .feature-body {
   padding: 4px 22px 24px;
 }
-
 .feature-body h3 {
   font-family: "Poppins", sans-serif;
   color: var(--navy);
@@ -932,13 +928,11 @@ a {
   font-weight: 700;
   margin-bottom: 10px;
 }
-
 .feature-body p {
   color: var(--text-light);
   margin-bottom: 14px;
   font-size: 0.96rem;
 }
-
 .feature-points {
   list-style: none;
   padding-left: 0;

@@ -36,7 +36,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Literature Survey: stack on large tablet */
+  /* Features: still 2-col but images adapt */
+  .feature-media img {
+    max-height: 200px;
+  }
+
+  /* Literature Survey: stack */
   .lit-layout {
     grid-template-columns: 1fr;
   }
@@ -78,6 +83,12 @@
   .scope-mini-points,
   .scope-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Features single column — image can be taller */
+  .feature-media img {
+    max-height: 280px;
+    min-height: 200px;
   }
 
   .supervisors-grid {
@@ -193,7 +204,6 @@
     grid-template-columns: 1fr;
     max-width: 100%;
   }
-
   .contact-layout {
     max-width: 100%;
   }
@@ -214,6 +224,15 @@
   /* Navbar */
   .logo-tagline {
     display: none;
+  }
+
+  /* Features on mobile */
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .feature-media img {
+    max-height: 260px;
+    min-height: 180px;
   }
 
   /* Literature */
@@ -265,10 +284,6 @@
     height: 150px;
   }
 
-  .feature-media img {
-    height: 180px;
-  }
-
   /* Team photo taller on mobile so full face shows */
   .team-image img {
     height: 280px;
@@ -317,5 +332,8 @@
   .contact-detail-card {
     flex-direction: column;
     gap: 10px;
+  }
+  .feature-media img {
+    max-height: 220px;
   }
 }
