@@ -546,14 +546,17 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
+/* Icon flows ABOVE the heading — no more absolute overlap on mobile */
 .scope-card {
   position: relative;
-  padding-top: 56px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
 }
 .scope-card-icon {
-  position: absolute;
-  top: 20px;
-  left: 24px;
+  /* Static flow — sits above h3 */
+  position: static;
   width: 36px;
   height: 36px;
   border-radius: var(--radius-sm);
@@ -565,6 +568,8 @@ a {
   font-size: 0.85rem;
   border: 1px solid var(--primary-mid);
   font-family: "Poppins", sans-serif;
+  margin-bottom: 14px;
+  flex-shrink: 0;
 }
 .scope-card h3 {
   font-family: "Poppins", sans-serif;
@@ -1038,7 +1043,7 @@ a {
   width: 100%;
   height: 240px;
   object-fit: cover;
-  object-position: top center;
+  object-position: center 15%; /* shows full face, not just forehead */
   transition: transform 0.4s ease;
 }
 .team-card:hover .team-image img {

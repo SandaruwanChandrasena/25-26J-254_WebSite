@@ -264,8 +264,10 @@
     height: 180px;
   }
 
+  /* Taller photo on mobile so full face shows */
   .team-image img {
-    height: 220px;
+    height: 280px;
+    object-position: center 20%;
   }
   .team-footer {
     flex-direction: column;
