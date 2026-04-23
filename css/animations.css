@@ -22,11 +22,9 @@
     opacity 0.7s ease,
     transform 0.7s ease;
 }
-
 .fade-in {
   transform: scale(0.96);
 }
-
 .reveal.active,
 .fade-up.active,
 .fade-in.active {
@@ -35,13 +33,12 @@
 }
 
 /* ===============================
-   BUTTON SHINE EFFECT
+   BUTTON SHINE
 ================================ */
 .btn {
   position: relative;
   overflow: hidden;
 }
-
 .btn::after {
   content: "";
   position: absolute;
@@ -57,7 +54,6 @@
   );
   transition: left 0.5s ease;
 }
-
 .btn:hover::after {
   left: 120%;
 }
@@ -74,7 +70,10 @@
 .stat-card,
 .download-card,
 .accordion-item,
-.overview-thumb {
+.overview-thumb,
+.lit-gaps-card,
+.lit-conclusion-card,
+.lit-contribution-card {
   transition:
     transform 0.35s ease,
     box-shadow 0.35s ease,
@@ -87,7 +86,6 @@
 .hero-image-card img {
   animation: floatImage 4.5s ease-in-out infinite;
 }
-
 @keyframes floatImage {
   0%,
   100% {
@@ -104,11 +102,9 @@
 .floating-badge {
   animation: floatBadge 4s ease-in-out infinite;
 }
-
 .badge-bottom {
   animation-delay: 0.8s;
 }
-
 @keyframes floatBadge {
   0%,
   100% {
@@ -127,13 +123,12 @@
     opacity 0.3s ease,
     transform 0.3s ease;
 }
-
 .overview-thumb.active {
   transform: scale(1.02);
 }
 
 /* ===============================
-   ACCORDION OPEN / CLOSE
+   ACCORDION
 ================================ */
 .accordion-body {
   max-height: 0;
@@ -143,7 +138,6 @@
     max-height 0.4s ease,
     opacity 0.3s ease;
 }
-
 .accordion-item.active .accordion-body {
   opacity: 1;
 }
@@ -154,7 +148,6 @@
 .tab-content {
   animation: fadeTab 0.35s ease;
 }
-
 @keyframes fadeTab {
   from {
     opacity: 0;
@@ -167,12 +160,11 @@
 }
 
 /* ===============================
-   NAV TOGGLE (hamburger → X)
+   NAV TOGGLE  (hamburger → X)
 ================================ */
 .nav-toggle span {
   transition: all 0.3s ease;
 }
-
 .nav-toggle.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -184,7 +176,7 @@
 }
 
 /* ===============================
-   BACK TO TOP FADE
+   BACK TO TOP
 ================================ */
 .back-to-top {
   opacity: 0;
@@ -195,7 +187,6 @@
     transform 0.3s ease,
     visibility 0.3s ease;
 }
-
 .back-to-top.show {
   opacity: 1;
   visibility: visible;
@@ -203,37 +194,41 @@
 }
 
 /* ===============================
-   SCROLL PROGRESS BAR
+   SCROLL PROGRESS
 ================================ */
 .scroll-progress {
   transition: width 0.15s linear;
 }
 
 /* ===============================
-   TEAM CARD PHOTO ZOOM
+   TEAM PHOTO ZOOM
 ================================ */
 .team-image img {
   transition: transform 0.4s ease;
 }
-
 .team-card:hover .team-image img {
   transform: scale(1.04);
 }
 
 /* ===============================
-   TECH TAG HOVER
-================================ */
-.tech-tags span {
-  transition: all 0.2s ease;
-}
-
-/* ===============================
-   FEATURE IMAGE HOVER
+   FEATURE IMAGE ZOOM
 ================================ */
 .feature-media img {
   transition: transform 0.35s ease;
 }
-
 .feature-card:hover .feature-media img {
   transform: scale(1.02);
+}
+
+/* ===============================
+   FOOTER PULSE DOT
+================================ */
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
 }

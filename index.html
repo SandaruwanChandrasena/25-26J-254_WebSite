@@ -23,9 +23,9 @@
   <body>
     <div class="scroll-progress"></div>
 
+    <!-- ======== HEADER ======== -->
     <header class="header" id="top">
       <div class="container nav-container">
-        <!-- Updated logo — paste inside .nav-container, replacing the old <a class="logo"> block -->
         <a href="#home" class="logo">
           <img src="images/logo/screenmind-logo.png" alt="ScreenMind Logo" />
           <div class="logo-text">
@@ -38,6 +38,9 @@
           <ul class="nav-links">
             <li><a href="#home" class="nav-link active">Home</a></li>
             <li><a href="#scope" class="nav-link">Project Scope</a></li>
+            <li>
+              <a href="#literature" class="nav-link">Literature Survey</a>
+            </li>
             <li><a href="#overview" class="nav-link">System Overview</a></li>
             <li><a href="#features" class="nav-link">Features</a></li>
             <li><a href="#milestones" class="nav-link">Milestones</a></li>
@@ -229,8 +232,234 @@
         </div>
       </section>
 
+      <!-- ======== LITERATURE SURVEY ======== -->
+      <section class="section" id="literature">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Literature Survey</p>
+            <h2>What Existing Research Tells Us</h2>
+            <p>
+              A review of existing studies on smartphone usage, social media
+              behavior, sleep patterns, and digital phenotyping in the context
+              of mental health.
+            </p>
+          </div>
+
+          <div class="lit-layout">
+            <!-- Left: Summary -->
+            <div class="lit-summary glass-card reveal">
+              <div class="lit-summary-header">
+                <div class="lit-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="scope-badge">Research Summary</span>
+                  <h3>Key Findings from Existing Literature</h3>
+                </div>
+              </div>
+              <p>
+                The reviewed studies highlight that smartphone usage, social
+                media behavior, sleep patterns, and digital phenotyping are all
+                significant factors influencing mental health. Existing research
+                demonstrates that excessive screen time and online interactions
+                are closely linked to stress, anxiety, depression, and sleep
+                disturbances.
+              </p>
+              <p>
+                However, most studies focus on individual aspects in isolation —
+                such as only social media analysis or only sleep behavior. They
+                lack an integrated approach that combines multiple behavioral
+                signals into a single system.
+              </p>
+              <p>
+                In addition, current research often does not provide real-time
+                monitoring, predictive capabilities, or practical mobile-based
+                implementations that users can interact with.
+              </p>
+            </div>
+
+            <!-- Right column -->
+            <div class="lit-right">
+              <!-- Identified gaps -->
+              <div class="lit-gaps-card glass-card reveal">
+                <p class="lit-card-label">
+                  Identified Gaps in Existing Research
+                </p>
+                <div class="lit-gaps">
+                  <span class="lit-gap-pill">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="8" x2="12" y2="12" />
+                      <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
+                    Isolated data sources
+                  </span>
+                  <span class="lit-gap-pill">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="8" x2="12" y2="12" />
+                      <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
+                    No real-time monitoring
+                  </span>
+                  <span class="lit-gap-pill">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="8" x2="12" y2="12" />
+                      <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
+                    Lack of predictive models
+                  </span>
+                  <span class="lit-gap-pill">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="8" x2="12" y2="12" />
+                      <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
+                    No mobile-based implementation
+                  </span>
+                  <span class="lit-gap-pill">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="8" x2="12" y2="12" />
+                      <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
+                    Missing explainability
+                  </span>
+                  <span class="lit-gap-pill">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" y1="8" x2="12" y2="12" />
+                      <line x1="12" y1="16" x2="12.01" y2="16" />
+                    </svg>
+                    No integrated multi-signal approach
+                  </span>
+                </div>
+              </div>
+
+              <!-- Conclusion -->
+              <div class="lit-conclusion-card glass-card reveal">
+                <div class="lit-conclusion-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="lit-card-label">Conclusion</p>
+                  <p class="lit-conclusion-text">
+                    These limitations emphasize the need for a comprehensive
+                    system that integrates multiple data sources and applies
+                    AI-based models for early detection.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ScreenMind Contribution -->
+              <div class="lit-contribution-card glass-card reveal">
+                <div class="lit-contribution-top">
+                  <span class="lit-contribution-badge"
+                    >ScreenMind Contribution</span
+                  >
+                </div>
+                <p class="lit-contribution-text">
+                  The ScreenMind system addresses these gaps by combining
+                  smartphone usage data, social interaction patterns, sleep
+                  behavior, and AI-driven analysis into a unified, real-time
+                  mental health detection platform.
+                </p>
+                <div class="lit-contribution-points">
+                  <div class="lit-cp">
+                    <span class="lit-cp-dot"></span>Multi-signal integration
+                  </div>
+                  <div class="lit-cp">
+                    <span class="lit-cp-dot"></span>Real-time AI analysis
+                  </div>
+                  <div class="lit-cp">
+                    <span class="lit-cp-dot"></span>Mobile-first platform
+                  </div>
+                  <div class="lit-cp">
+                    <span class="lit-cp-dot"></span>Explainable results
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ======== SYSTEM OVERVIEW ======== -->
-      <section class="section" id="overview">
+      <section class="section section-alt" id="overview">
         <div class="container">
           <div class="section-heading reveal">
             <p class="section-tag">System Overview</p>
@@ -287,7 +516,7 @@
                 data-badge="Methodology Diagram"
                 data-title="Research Methodology Flow"
                 data-image="images/diagrams/methodology-diagram.png"
-                data-description="This diagram presents the step-by-step process of the research workflow, from data collection and preprocessing to AI analysis, prediction, and intervention."
+                data-description="Step-by-step process from data collection and preprocessing to AI analysis, prediction, and intervention."
               >
                 <img
                   src="images/diagrams/methodology-diagram.png"
@@ -304,7 +533,7 @@
                 data-badge="Solution Overview"
                 data-title="Complete ScreenMind Solution Structure"
                 data-image="images/diagrams/solution-overview.png"
-                data-description="This overview highlights the major modules of ScreenMind and shows how the four intelligent components contribute to the complete mental health detection system."
+                data-description="High-level overview of ScreenMind's four intelligent components and how they contribute to the complete system."
               >
                 <img
                   src="images/diagrams/solution-overview.png"
@@ -321,7 +550,7 @@
                 data-badge="Project Management"
                 data-title="Project Planning & Management View"
                 data-image="images/diagrams/project-management-tool.png"
-                data-description="This screenshot shows the task tracking and project planning workflow used by the team to manage milestones, responsibilities, and overall progress."
+                data-description="Task tracking and project planning workflow used by the team to manage milestones, responsibilities, and progress."
               >
                 <img
                   src="images/diagrams/project-management-tool.png"
@@ -338,7 +567,7 @@
       </section>
 
       <!-- ======== FEATURES ======== -->
-      <section class="section section-alt" id="features">
+      <section class="section" id="features">
         <div class="container">
           <div class="section-heading reveal">
             <p class="section-tag">Key Features</p>
@@ -444,7 +673,7 @@
       </section>
 
       <!-- ======== MILESTONES ======== -->
-      <section class="section" id="milestones">
+      <section class="section section-alt" id="milestones">
         <div class="container">
           <div class="section-heading reveal">
             <p class="section-tag">Milestones</p>
@@ -462,7 +691,7 @@
       </section>
 
       <!-- ======== DOWNLOADS ======== -->
-      <section class="section section-alt" id="downloads">
+      <section class="section" id="downloads">
         <div class="container">
           <div class="section-heading reveal">
             <p class="section-tag">Downloads</p>
@@ -499,7 +728,7 @@
       </section>
 
       <!-- ======== ABOUT ======== -->
-      <section class="section" id="about">
+      <section class="section section-alt" id="about">
         <div class="container">
           <div class="section-heading reveal">
             <p class="section-tag">About Us</p>
@@ -520,7 +749,6 @@
             </div>
 
             <div class="supervisors-grid">
-              <!-- Supervisor 1 -->
               <div class="team-card supervisor-card reveal">
                 <div class="team-image">
                   <img
@@ -535,8 +763,8 @@
                   <h3>Ms. Sanjeevi Chandrasiri</h3>
                   <p class="team-position">Senior Lecturer</p>
                   <p class="team-dept">
-                    Department of Information Technology<br />
-                    Faculty of Computing, SLIIT
+                    Department of Information Technology<br />Faculty of
+                    Computing, SLIIT
                   </p>
                 </div>
                 <div class="team-footer">
@@ -576,7 +804,6 @@
                 </div>
               </div>
 
-              <!-- Supervisor 2 -->
               <div class="team-card supervisor-card reveal">
                 <div class="team-image">
                   <img
@@ -591,8 +818,8 @@
                   <h3>Ms. Sasini Hathurusinghe</h3>
                   <p class="team-position">Assistant Lecturer</p>
                   <p class="team-dept">
-                    Department of Information Technology<br />
-                    Faculty of Computing, SLIIT
+                    Department of Information Technology<br />Faculty of
+                    Computing, SLIIT
                   </p>
                 </div>
                 <div class="team-footer">
@@ -647,7 +874,7 @@
       </section>
 
       <!-- ======== CONTACT ======== -->
-      <section class="section section-alt" id="contact">
+      <section class="section" id="contact">
         <div class="container">
           <div class="section-heading reveal">
             <p class="section-tag">Contact Us</p>
@@ -660,7 +887,7 @@
           </div>
 
           <div class="contact-layout reveal">
-            <!-- LEFT -->
+            <!-- Left -->
             <div class="contact-info-card glass-card">
               <div class="contact-card-header">
                 <div class="contact-card-icon">
@@ -709,7 +936,7 @@
               </ul>
             </div>
 
-            <!-- RIGHT -->
+            <!-- Right -->
             <div class="contact-right">
               <div class="contact-detail-card glass-card">
                 <div class="contact-detail-icon">
@@ -810,18 +1037,19 @@
     <!-- ======== FOOTER ======== -->
     <footer class="footer">
       <div class="container">
-
         <div class="footer-grid">
-
-          <!-- Brand column -->
           <div class="footer-brand">
             <div class="footer-logo">
-              <img src="images/logo/screenmind-logo.png" alt="ScreenMind Logo" />
+              <img
+                src="images/logo/screenmind-logo.png"
+                alt="ScreenMind Logo"
+              />
               <span class="footer-logo-name">ScreenMind</span>
             </div>
             <p class="footer-desc">
-              An AI-based mental health detection system for smartphone addiction,
-              built with digital phenotyping, behavioral analytics, and explainable AI.
+              An AI-based mental health detection system for smartphone
+              addiction, built with digital phenotyping, behavioral analytics,
+              and explainable AI.
             </p>
             <div class="footer-badge">
               <span class="footer-badge-dot"></span>
@@ -829,35 +1057,36 @@
             </div>
           </div>
 
-          <!-- Project info column -->
           <div class="footer-col">
             <p class="footer-col-title">Project Info</p>
             <ul class="footer-info-list">
               <li>
-                <span class="footer-info-key">Project ID</span>
-                <span class="footer-info-val">25-26J-254</span>
+                <span class="footer-info-key">Project ID</span
+                ><span class="footer-info-val">25-26J-254</span>
               </li>
               <li>
-                <span class="footer-info-key">Research Area</span>
-                <span class="footer-info-val">Digital Phenotyping & Mental Health AI</span>
+                <span class="footer-info-key">Research Area</span
+                ><span class="footer-info-val"
+                  >Digital Phenotyping &amp; Mental Health AI</span
+                >
               </li>
               <li>
-                <span class="footer-info-key">Institution</span>
-                <span class="footer-info-val">SLIIT Faculty of Computing</span>
+                <span class="footer-info-key">Institution</span
+                ><span class="footer-info-val">SLIIT Faculty of Computing</span>
               </li>
               <li>
-                <span class="footer-info-key">Academic Year</span>
-                <span class="footer-info-val">2025 / 2026</span>
+                <span class="footer-info-key">Academic Year</span
+                ><span class="footer-info-val">2025 / 2026</span>
               </li>
             </ul>
           </div>
 
-          <!-- Quick links column -->
           <div class="footer-col">
             <p class="footer-col-title">Quick Links</p>
             <ul class="footer-nav-list">
               <li><a href="#home">Home</a></li>
               <li><a href="#scope">Project Scope</a></li>
+              <li><a href="#literature">Literature Survey</a></li>
               <li><a href="#overview">System Overview</a></li>
               <li><a href="#features">Features</a></li>
               <li><a href="#milestones">Milestones</a></li>
@@ -866,10 +1095,8 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-
         </div>
 
-        <!-- Bottom bar -->
         <div class="footer-bottom">
           <p class="footer-bottom-left">
             © 2026 <strong>ScreenMind</strong>. All Rights Reserved.
@@ -878,7 +1105,6 @@
             AI-Based Mental Health Detection System for Smartphone Addiction
           </p>
         </div>
-
       </div>
     </footer>
 

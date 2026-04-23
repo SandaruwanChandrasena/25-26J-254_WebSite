@@ -28,7 +28,6 @@ const navLinks = document.querySelectorAll(".nav-link");
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
-  /* Active section highlight */
   let current = "";
   sections.forEach((section) => {
     if (scrollY >= section.offsetTop - 120) {
@@ -43,13 +42,10 @@ window.addEventListener("scroll", () => {
     }
   });
 
-  /* Elevated shadow when scrolled */
+  /* Add shadow when scrolled */
   const header = document.querySelector(".header");
   if (header) {
-    if (scrollY > 40) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
+    if (scrollY > 40) header.classList.add("scrolled");
+    else header.classList.remove("scrolled");
   }
 });

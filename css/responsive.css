@@ -10,7 +10,6 @@
   .hero-image-wrap {
     min-height: auto;
   }
-
   .badge-top {
     top: 20px;
     right: 20px;
@@ -24,7 +23,6 @@
   .scope-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .scope-card-wide {
     grid-column: auto;
   }
@@ -36,6 +34,11 @@
 
   .downloads-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Literature Survey: stack on large tablet */
+  .lit-layout {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -77,7 +80,6 @@
     grid-template-columns: 1fr;
   }
 
-  /* Supervisors: 2-col centered on tablet (only 2 cards) */
   .supervisors-grid {
     grid-template-columns: repeat(2, 1fr);
     max-width: 560px;
@@ -85,10 +87,17 @@
     margin-right: auto;
   }
 
-  /* Contact: stack on tablet */
   .contact-layout {
     grid-template-columns: 1fr;
     max-width: 560px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-desc {
+    max-width: 100%;
   }
 
   .nav {
@@ -120,15 +129,6 @@
   .nav-toggle {
     display: flex;
     cursor: pointer;
-  }
-
-  /* Footer: 1-col on tablet */
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-  .footer-desc {
-    max-width: 100%;
   }
 }
 
@@ -189,13 +189,11 @@
     grid-template-columns: 1fr;
   }
 
-  /* Supervisors single column on mobile */
   .supervisors-grid {
     grid-template-columns: 1fr;
     max-width: 100%;
   }
 
-  /* Contact full width on mobile */
   .contact-layout {
     max-width: 100%;
   }
@@ -213,17 +211,24 @@
     flex: 1 1 100%;
   }
 
+  /* Navbar */
   .logo-tagline {
     display: none;
   }
 
-  .footer-grid {
-    gap: 24px;
+  /* Literature */
+  .lit-summary-header {
+    padding: 18px 20px 16px;
+    gap: 12px;
   }
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-    gap: 6px;
+  .lit-summary > p {
+    padding: 0 20px;
+  }
+  .lit-summary > p:last-child {
+    padding-bottom: 20px;
+  }
+  .lit-contribution-points {
+    grid-template-columns: 1fr;
   }
 
   .glass-card {
@@ -264,7 +269,7 @@
     height: 180px;
   }
 
-  /* Taller photo on mobile so full face shows */
+  /* Team photo taller on mobile so full face shows */
   .team-image img {
     height: 280px;
     object-position: center 20%;
@@ -272,6 +277,16 @@
   .team-footer {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  /* Footer */
+  .footer-grid {
+    gap: 24px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
   }
 }
 
@@ -285,24 +300,20 @@
   .hero-content h1 {
     font-size: 1.65rem;
   }
-
   .btn {
     padding: 11px 16px;
     font-size: 0.92rem;
   }
-
   .stat-card h3 {
     font-size: 1.2rem;
   }
   .stat-card p {
     font-size: 0.9rem;
   }
-
   .nav {
     width: 100%;
     right: -100%;
   }
-
   .contact-detail-card {
     flex-direction: column;
     gap: 10px;
