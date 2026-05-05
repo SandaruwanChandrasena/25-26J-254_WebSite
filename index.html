@@ -600,9 +600,10 @@
                   models.
                 </p>
                 <ul class="feature-points">
-                  <li>Usage-based risk scoring</li>
-                  <li>Time-series pattern analysis</li>
-                  <li>Explainable predictions</li>
+                  <li>Uses PHQ-9, GAD-7 questionnaires and smartphone usage data</li>
+                  <li>Applies machine learning model to analyze overall mental health</li>
+                  <li>Predicts and classifies user risk level (Low → High)</li>
+                  <li>Provides final risk score for dashboard and alert system</li>
                 </ul>
               </div>
             </article>
@@ -622,9 +623,11 @@
                   social platforms to identify early signs of distress.
                 </p>
                 <ul class="feature-points">
-                  <li>Transformer-based sentiment</li>
-                  <li>Interaction frequency analysis</li>
-                  <li>Behavioral signal extraction</li>
+                  <li>Captures social media notifications</li>
+                  <li>Applies sentiment analysis (Twitter-roBERTa-base)</li>
+                  <li>Detects emoji-text mismatch</li>
+                  <li>Identifies hidden emotional distress</li>
+                  <li>Generates risk scores</li>
                 </ul>
               </div>
             </article>
@@ -644,9 +647,11 @@
                   patterns to identify possible social isolation risks.
                 </p>
                 <ul class="feature-points">
-                  <li>Communication decline tracking</li>
-                  <li>Mobility signal analysis</li>
-                  <li>Behavioral change detection</li>
+                  <li>Tracks mobility and time spent at primary location</li>
+                  <li>Measures communication frequency and social diversity</li>
+                  <li>Uses proximity signals to estimate social exposure</li>
+                  <li>Detects risky behaviour patterns such as high night usage</li>
+                  <li>Produces Low / Moderate / High isolation risk level with recommendations</li>
                 </ul>
               </div>
             </article>
@@ -666,7 +671,9 @@
                   usage at night and device interaction signals.
                 </p>
                 <ul class="feature-points">
-                  <li>Night-time usage detection</li>
+                  <li>Analyzes late-night activity and sleep-related behavior</li>
+                  <li>Applies AI model (BiLSTM + Random Forest) for prediction</li>
+                  <li>Integrates morning checking for ground truth validation</li>
                   <li>Sleep pattern inference</li>
                   <li>Risk scoring model</li>
                 </ul>
